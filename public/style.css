@@ -1,0 +1,17 @@
+body {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    background-color: #000;
+    color: #fff;
+}
+
+h1 {
+    font: 100 normal 10vw/5vw "Trebuchet MS","Lucida Grande","Lucida Sans Unicode","Lucida Sans",Tahoma,sans-serif;
+}
+
+p {
+    font: 100 normal 2.5vw/1.25vw "Trebuchet MS","Lucida Grande","Lucida Sans Unicode","Lucida Sans",Tahoma,sans-serif;
+}
