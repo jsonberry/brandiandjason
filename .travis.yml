@@ -9,7 +9,3 @@ before_script:
 
 script:
   - firebase deploy --token $FIREBASE_TOKEN
-
-branches:
-  only:
-    - master
