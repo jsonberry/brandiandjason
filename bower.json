@@ -1,0 +1,17 @@
+{
+  "name": "brandiandjason",
+  "description": "Brandi and Jason Wedding site",
+  "authors": [
+    "Jason Awbrey"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {},
+  "overrides": {}
+}

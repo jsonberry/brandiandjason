@@ -1,0 +1,30 @@
+.nav {
+    position: fixed;
+    width: 100%;
+    padding: 1rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 2px 2px 2px 1px $md-dol-divider;
+    &__item {
+        display: inline-block;
+        color: $md-dol-secondary;
+        text-decoration: none;
+        padding-right: 2rem;
+        transition: color 250ms ease;
+
+        &:hover {
+            color: $md-dol-primary;
+        }
+
+        &:visited {
+            color: $md-dol-secondary
+        }
+
+        &--siteId {
+            font-size: 2rem;
+            padding-left: 2rem;
+        }
+    }
+
+}

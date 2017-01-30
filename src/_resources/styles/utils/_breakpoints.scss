@@ -1,0 +1,44 @@
+@mixin respond($device, $size, $orientation: null) {
+    @if ($orientation != null) {
+        @media screen and (min-width: calc-width($device, $size)) and (orientation: $orientation) {
+            @content;
+        }
+    } @else {
+        @media screen and (min-width: calc-width($device, $size)) {
+            @content;
+        }
+    }
+}
+
+@mixin align($alignment) {
+    @media (orientation: $alignment) {
+        @content;
+    }
+}
+
+@mixin retina {
+    @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) { @content; }
+}
+
+@function calc-width($device, $size) {
+    $d: map-get($device-list, $device);
+    $s: 0 !default;
+
+    @if ($size == large) {
+        $s: map-get($large-list, $device);
+    }
+
+    @return $d + $s;
+}
+
+$device-list:(  phone  : 0,
+                tab    : 600px,
+                laptop : 1024px,
+                desktop: 1600px,
+                cinema : 2560px,
+                5k     : 5120px );
+
+$large-list: ( phone  : 360px,
+               tab    : 168px,
+               laptop : 256px,
+               desktop: 320px );

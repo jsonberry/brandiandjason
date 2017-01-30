@@ -1,0 +1,8 @@
+.fouc-mask--loading {
+    opacity: 0;
+}
+
+.fouc-mask--loaded {
+    opacity: 1;
+    transition: opacity 350ms;
+}
