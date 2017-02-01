@@ -41,8 +41,7 @@ gulp.task('browserSyncStart', ['devBuild'], function() {
     });
 });
 
-gulp.task('devBuild', ['jsDevBuild', 'sassDevBuild', 'imgStripMetaDataDev']);
-// gulp.task('devBuild', ['jsDevBuild', 'sassDevBuild', 'bowerDevBuild', 'imgStripMetaDataDev']);
+gulp.task('devBuild', ['jsDevBuild', 'sassDevBuild', 'bowerDevBuild', 'imgStripMetaDataDev']);
 
 gulp.task('watch', function () {
     gulp.watch([jsFiles], ['jsReload']);
@@ -129,24 +128,24 @@ gulp.task('sassStream', function () {
 
 //-------------------------------------------------------------- Bower Dev Build & Stream Tasks
 
-// gulp.task('bowerDevBuild', ['bowerJSDev', 'bowerCSSDev']);
-//
-// gulp.task('bowerCSSDev', ['jekyllDevBuild'], function () {
-//   return gulp.src(bower(bowerCssFiles))
-//     .pipe(sourcemaps.init())
-//     .pipe(concat('vendor.min.css'))
-//     .pipe(postcss(processors))
-//     .pipe(sourcemaps.write())
-//     .pipe(gulp.dest(cssDest));
-// });
-//
-// gulp.task('bowerJSDev', ['jekyllDevBuild'], function () {
-//   return gulp.src(bower(bowerJsFiles))
-//     .pipe(sourcemaps.init())
-//     .pipe(concat('vendor.min.js'))
-//     .pipe(sourcemaps.write())
-//     .pipe(gulp.dest(jsDest));
-// });
+gulp.task('bowerDevBuild', ['bowerJSDev', 'bowerCSSDev']);
+
+gulp.task('bowerCSSDev', ['jekyllDevBuild'], function () {
+  return gulp.src(bower(bowerCssFiles))
+    .pipe(sourcemaps.init())
+    .pipe(concat('vendor.min.css'))
+    .pipe(postcss(processors))
+    .pipe(sourcemaps.write())
+    .pipe(gulp.dest(cssDest));
+});
+
+gulp.task('bowerJSDev', ['jekyllDevBuild'], function () {
+  return gulp.src(bower(bowerJsFiles))
+    .pipe(sourcemaps.init())
+    .pipe(concat('vendor.min.js'))
+    .pipe(sourcemaps.write())
+    .pipe(gulp.dest(jsDest));
+});
 
 //-------------------------------------------------------------- Jekyll Tasks
 

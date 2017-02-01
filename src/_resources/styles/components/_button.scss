@@ -1,0 +1,18 @@
+.button {
+    text-decoration: none;
+    text-transform: uppercase;
+    display: inline-block;
+    color: $md-dol-secondary;
+    padding: 1rem 2rem;
+    border-radius: 2rem;
+    border: 1px solid $md-dol-primary;
+    transition: color 250ms ease;
+
+    &:hover {
+        color: $md-dol-primary;
+    }
+
+    &:visited {
+        color: $md-dol-secondary
+    }
+}

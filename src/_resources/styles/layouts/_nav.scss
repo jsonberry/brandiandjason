@@ -5,6 +5,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: $white;
     box-shadow: 2px 2px 2px 1px $md-dol-divider;
     &__item {
         display: inline-block;

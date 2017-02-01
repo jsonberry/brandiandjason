@@ -1,0 +1,31 @@
+.section {
+    padding: 10rem 0;
+
+    &:first-child {
+        padding: 25% 0;
+    }
+
+    &.home {
+        // background-color: $blue;
+    }
+
+    &.story {
+        background-color: $sea-foam;
+    }
+
+    &.location {
+        background-color: $baby-blue;
+    }
+
+    &.faq {
+        background-color: $cream;
+    }
+
+    &.registry {
+        background-color: $orange;
+    }
+
+    &.rsvp {
+        background-color: $blue;
+    }
+}
