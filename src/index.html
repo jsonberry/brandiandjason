@@ -1,14 +1,50 @@
 ---
-home_title_line_1: 'Brandi & Jason'
+home_title_line_1: 'brandi & jason'
 home_title_line_2: 'are getting married'
 home_date: '07.15.17'
 home_time: '11 am'
 home_location: 'Noble Rot Restaurant, Portland, OR'
 ---
-{% include sections/home.html %}
-{% include sections/road.html %}
-{% include sections/journey.html %}
-{% include sections/location.html %}
-{% include sections/portland.html %}
-{% include sections/registry.html %}
-{% include sections/rsvp.html %}
+{%  include
+        sections/home.html
+%}
+
+{%  include
+        sections/divider.html
+        image="road.jpg"
+%}
+
+{%  include
+        sections/journey.html
+%}
+
+{%  include
+        sections/divider.html
+        image="noble_rot.jpg"
+%}
+
+{%  include
+        sections/location.html
+%}
+
+{%  include
+        sections/divider.html
+        image="portland.jpg"
+%}
+
+{%  include
+        sections/portland.html
+%}
+
+{%  include
+        sections/registry.html
+%}
+
+{%  include
+    sections/divider.html
+    image="rsvp.jpg"
+%}
+
+{%  include
+        sections/rsvp.html
+%}

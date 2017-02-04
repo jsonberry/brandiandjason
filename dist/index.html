@@ -66,24 +66,24 @@
     <body>
         <nav class="nav">
     <div class="nav__section nav-link">
-        <a href="#home" class="font-light nav__item nav__item--siteId">
+        <a href="#home" class="nav__item nav__item--siteId">
             b&amp;j
         </a>
     </div>
     <div class="nav__section nav-link">
-        <a href="#journey" class="font-light nav__item">
+        <a href="#journey" class="nav__item">
             the journey
         </a>
-        <a href="#location" class="font-light nav__item">
+        <a href="#location" class="nav__item">
             when + where
         </a>
-        <a href="#portland" class="font-light nav__item">
+        <a href="#portland" class="nav__item">
             what to do in portland
         </a>
-        <a href="#registry" class="font-light nav__item">
+        <a href="#registry" class="nav__item">
             registry
         </a>
-        <a href="#rsvp" class="font-light nav__item">
+        <a href="#rsvp" class="nav__item">
             rsvp
         </a>
     </div>
@@ -94,7 +94,7 @@
     <section class="section home" id="home">
     <div class="wrapper">
         <h1 class="font-regular title">
-            Brandi & Jason <br />
+            brandi & jason <br />
             are getting married
         </h1>
         <p class="font-light subheading">
@@ -104,11 +104,13 @@
     </div>
 </section>
 
-<section class="section road"></section>
+
+<section class="section divider" style="background-image: url('../../assets/images/road.jpg');"></section>
+
 
 <section class="section journey" id="journey">
     <div class="content">
-        <h2 class="font-regular heading">The Journey</h2>
+        <h2 class="font-regular heading">the journey</h2>
         <div class="brandi">
             <h3 class="font-light subheading">Brandi</h3>
             <div class="flex-container">
@@ -130,6 +132,10 @@
     </div>
 </section>
 
+
+<section class="section divider" style="background-image: url('../../assets/images/noble_rot.jpg');"></section>
+
+
 <section class="section location" id="location">
     <div class="content">
         <h2 class="heading">
@@ -149,14 +155,18 @@
                     Portland, OR 97201
                 </address>
             </div>
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2795.3548563042264!2d-122.65648878442006!3d45.52306417910169!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5495a0a56d14615f%3A0xd793fc6ab312b3b7!2sNoble+Rot!5e0!3m2!1sen!2sus!4v1486228329399"
-                width="500"
-                height="300"
-                frameborder="0"
-                style="border:0"
-                allowfullscreen>
-            </iframe>
+            <div>
+                <div class="overlay" onClick="style.pointerEvents='none'"></div>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2795.3548563042264!2d-122.65648878442006!3d45.52306417910169!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5495a0a56d14615f%3A0xd793fc6ab312b3b7!2sNoble+Rot!5e0!3m2!1sen!2sus!4v1486228329399"
+                    width="500"
+                    height="300"
+                    frameborder="0"
+                    style="border:0"
+                    scrollwheel="false"
+                    allowfullscreen>
+                </iframe>
+            </div>
         </div>
         <div class="parking article">
             <h3 class="subheading">
@@ -194,6 +204,10 @@
     </div>
 </section>
 
+
+<section class="section divider" style="background-image: url('../../assets/images/portland.jpg');"></section>
+
+
 <section class="section portland" id="portland">
     <h1 class="regular">
         b &amp; j
@@ -212,23 +226,24 @@
     </button>
 </section>
 
+
 <section class="section registry" id="registry">
-    <h1 class="regular">
-        b &amp; j
-    </h1>
-    <h1 class="regular">
-        The Afterparty
-    </h1>
-    <p class="light">
-        07.15.17
-    </p>
-    <p class="light">
-        Portland, OR
-    </p>
-    <button type="button" name="button">
-        RSVP (CTA BUTTON)
-    </button>
+    <div class="content">
+        <h2 class="heading">
+            Registry
+        </h2>
+        <p class="copy">
+            We are so happy that you’ll be able to join us for our wedding. While the presence of your company is the only gift we could ask for, an alternative registry has been set up here for those who have expressed an interest in offering a gift to mark the occasion.
+        </p>
+        <div class="cta-container">
+            <a href="#" class="button">visit registry</a>
+        </div>
+    </div>
 </section>
+
+
+<section class="section divider" style="background-image: url('../../assets/images/rsvp.jpg');"></section>
+
 
 <section class="section rsvp" id="rsvp">
     <h1 class="regular">

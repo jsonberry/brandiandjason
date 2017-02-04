@@ -21,6 +21,7 @@
 }
 
 @mixin nav-link {
+    font-family: jSans-light, sans-serif;
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -28,6 +29,7 @@
 
 @mixin heading {
     font-family: jSans-regular, sans-serif;
+    text-transform: lowercase;
     margin-bottom: 5rem;
     font-size: 6rem;
     font-weight: 400;

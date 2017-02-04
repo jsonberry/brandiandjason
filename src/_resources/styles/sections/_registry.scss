@@ -1,0 +1,21 @@
+.section.registry {
+    .heading {
+        @include heading;
+        text-align: center;
+    }
+
+    .subheading {
+        @include subheading;
+    }
+
+    .copy {
+        @include copy;
+        margin-bottom: 3rem;
+    }
+
+    .cta-container {
+        display: flex;
+        justify-content: center;
+    }
+
+}
