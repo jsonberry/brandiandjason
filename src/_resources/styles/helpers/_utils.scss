@@ -10,10 +10,10 @@
 .flex {
     &-container {
         display: flex;
-    }
 
-    &-stack {
-        flex-direction: column;
+        &.stack {
+            flex-direction: column;
+        }
     }
 }
 
