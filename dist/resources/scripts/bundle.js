@@ -47,21 +47,11 @@
 	'use strict';
 	
 	$(function () {
-	    $('a[href^="#home"]').click(function () {
-	        $('html, body').animate({
-	            scrollTop: $('#home').offset().top
-	        }, 1000);
-	    });
+	    $('a').click(function (e) {
+	        var scrollTo = e.currentTarget.hash;
 	
-	    $('a[href^="#journey"]').click(function () {
 	        $('html, body').animate({
-	            scrollTop: $('#journey').offset().top
-	        }, 1000);
-	    });
-	
-	    $('a[href^="#rsvp"]').click(function () {
-	        $('html, body').animate({
-	            scrollTop: $('#rsvp').offset().top
+	            scrollTop: $(scrollTo).offset().top
 	        }, 1000);
 	    });
 	});

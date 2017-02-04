@@ -27,20 +27,26 @@
 }
 
 @mixin heading {
-    margin-bottom: 2rem;
+    font-family: jSans-regular, sans-serif;
+    margin-bottom: 5rem;
     font-size: 6rem;
     font-weight: 400;
+    color: $md-dol-primary;
 }
 
 @mixin subheading {
+    font-family: jSans-light, sans-serif;
     font-size: 3rem;
     font-weight: 300;
+    color: $md-dol-primary;
 }
 
 @mixin copy {
+    font-family: jSans-light, sans-serif;
     font-size: 1.5rem;
     line-height: 2.14285714285714rem;
     font-weight: 300;
+    color: $md-dol-secondary;
 }
 
 @mixin button {

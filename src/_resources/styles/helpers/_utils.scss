@@ -6,3 +6,13 @@
     opacity: 1;
     transition: opacity 350ms;
 }
+
+.flex {
+    &-container {
+        display: flex;
+    }
+
+    &-stack {
+        flex-direction: column;
+    }
+}

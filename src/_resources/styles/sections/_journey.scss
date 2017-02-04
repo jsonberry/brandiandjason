@@ -21,22 +21,24 @@
         @include copy;
     }
 
-    .wrapper {
-        margin-bottom: 2rem;
-        max-width: 28.57142857142857rem;
-    }
-
     .brandi {
         text-align: left;
+        margin-bottom: 3rem;
     }
 
     .jason {
         text-align: right;
         margin-left: auto;
+        margin-bottom: 5rem;
     }
 
     .bandj {
         text-align: center;
+    }
+
+    .avatar {
+        width: 250px;
+        height: 250px;
     }
 
 }
