@@ -54,7 +54,7 @@
             });
 
         Promise.all([light.load(), regular.load()]).then(function () {
-            document.documentElement.className += " fonts-loaded";
+            document.documentElement.className += "fonts-loaded";
 
             // Optimization for Repeat Views
             sessionStorage.foutFontsLoaded = true;
@@ -64,60 +64,62 @@
 
     </head>
     <body>
-        <div class="nav">
+        <nav class="nav">
     <div class="nav__section nav-link">
-        <a href="#home" class="nav__item nav__item--siteId">
-            B&amp;J
+        <a href="#home" class="font-light nav__item nav__item--siteId">
+            b&amp;j
         </a>
     </div>
     <div class="nav__section nav-link">
-        <a href="#" class="nav__item">
-            OUR STORY
+        <a href="#journey" class="font-light nav__item">
+            the journey
         </a>
-        <a href="#" class="nav__item">
-            WHEN + WHERE
+        <a href="#" class="font-light nav__item">
+            when + where
         </a>
-        <a href="#" class="nav__item">
-            FAQ
+        <a href="#" class="font-light nav__item">
+            faq
         </a>
-        <a href="#" class="nav__item">
-            REGISTRY
+        <a href="#" class="font-light nav__item">
+            registry
         </a>
-        <a href="#" class="nav__item">
-            RSVP
+        <a href="#" class="font-light nav__item">
+            rsvp
         </a>
     </div>
-</div>
+</nav>
 
             <main class="main " aria-label="Content">
 
     <section class="section home" id="home">
-    <h1 class="title">
+    <h1 class="font-regular title">
         brandi & jason <br />
         are getting married
     </h1>
-    <p class="subheading">
-        07.15.17 <span class="divider light">|</span> 11 am <span class="divider light">|</span> Noble Rot Restaurant, Portland, OR
+    <p class="font-light subheading">
+        07.15.17 <span class="divider font-light">|</span> 11 am <span class="divider light">|</span> Noble Rot Restaurant, Portland, OR
     </p>
     <a href="#rsvp" class="button">rsvp</a>
 </section>
 
-<section class="section story">
-    <h1 class="regular">
-        b &amp; j
-    </h1>
-    <h1 class="regular">
-        The Afterparty
-    </h1>
-    <p class="light">
-        07.15.17
-    </p>
-    <p class="light">
-        Portland, OR
-    </p>
-    <button type="button" name="button">
-        RSVP (CTA BUTTON)
-    </button>
+<section class="section road"></section>
+
+<section class="section journey" id="journey">
+    <div class="content">
+        <h2 class="font-regular heading">the journey</h2>
+        <div class="brandi wrapper">
+            <h3 class="font-light subheading">brandi</h3>
+            <p class="font-light copy">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+        <div class="jason wrapper">
+            <h3 class="font-light subheading">jason</h3>
+            <p class="font-light copy">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+        <div class="bandj">
+            <h3 class="font-light subheading">jrandison</h3>
+            <p class="font-light copy">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+    </div>
 </section>
 
 <section class="section location">

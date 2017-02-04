@@ -1,0 +1,10 @@
+@function calc-width($device, $size) {
+    $d: map-get($device-list, $device);
+    $s: 0 !default;
+
+    @if ($size == large) {
+        $s: map-get($large-list, $device);
+    }
+
+    @return $d + $s;
+}

@@ -20,25 +20,29 @@
     @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) { @content; }
 }
 
-@function calc-width($device, $size) {
-    $d: map-get($device-list, $device);
-    $s: 0 !default;
-
-    @if ($size == large) {
-        $s: map-get($large-list, $device);
-    }
-
-    @return $d + $s;
+@mixin nav-link {
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
-$device-list:(  phone  : 0,
-                tab    : 600px,
-                laptop : 1024px,
-                desktop: 1600px,
-                cinema : 2560px,
-                5k     : 5120px );
+@mixin heading {
+    margin-bottom: 2rem;
+    font-size: 6rem;
+    font-weight: 400;
+}
 
-$large-list: ( phone  : 360px,
-               tab    : 168px,
-               laptop : 256px,
-               desktop: 320px );
+@mixin subheading {
+    font-size: 3rem;
+    font-weight: 300;
+}
+
+@mixin copy {
+    font-size: 1.5rem;
+    line-height: 2.14285714285714rem;
+    font-weight: 300;
+}
+
+@mixin button {
+    font-weight: 600;
+}

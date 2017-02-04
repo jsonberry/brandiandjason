@@ -1,12 +1,17 @@
 .section.home {
     text-align: center;
+    padding: 23.28571428571429rem 0 20rem;
+    background-color: $white;
+
     .title {
+        font-weight: 400;
         font-size: 6rem;
         line-height: .9;
         margin-bottom: 2rem;
     }
 
     .subheading {
+        @include subheading;
         font-size: 1.7rem;
         font-style: italic;
         margin-bottom: 2rem;

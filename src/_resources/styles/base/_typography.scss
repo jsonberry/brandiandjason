@@ -1,0 +1,15 @@
+.font-light,
+.font-regular {
+    font-family: sans-serif;
+}
+
+// Font loaded in _includes/fonts.html
+.fonts-loaded {
+    .font-light {
+        font-family: jSans-light, sans-serif;
+    }
+
+    .font-regular {
+        font-family: jSans-regular, sans-serif;
+    }
+}

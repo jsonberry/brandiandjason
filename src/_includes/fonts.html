@@ -42,7 +42,7 @@
             });
 
         Promise.all([light.load(), regular.load()]).then(function () {
-            document.documentElement.className += " fonts-loaded";
+            document.documentElement.className += "fonts-loaded";
 
             // Optimization for Repeat Views
             sessionStorage.foutFontsLoaded = true;

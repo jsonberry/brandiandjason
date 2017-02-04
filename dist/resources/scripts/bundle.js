@@ -53,6 +53,12 @@
 	        }, 1000);
 	    });
 	
+	    $('a[href^="#journey"]').click(function () {
+	        $('html, body').animate({
+	            scrollTop: $('#journey').offset().top
+	        }, 1000);
+	    });
+	
 	    $('a[href^="#rsvp"]').click(function () {
 	        $('html, body').animate({
 	            scrollTop: $('#rsvp').offset().top

@@ -7,7 +7,9 @@
     align-items: center;
     background-color: $white;
     box-shadow: 2px 2px 2px 1px $md-dol-divider;
+
     &__item {
+        @include nav-link;
         display: inline-block;
         color: $md-dol-secondary;
         text-decoration: none;
@@ -19,7 +21,7 @@
         }
 
         &:visited {
-            color: $md-dol-secondary
+            color: $md-dol-secondary;
         }
 
         &--siteId {
