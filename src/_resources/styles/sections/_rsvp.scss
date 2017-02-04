@@ -1,0 +1,87 @@
+.section.rsvp {
+    .content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .form-group {
+        display: flex;
+        align-items: center;
+        margin-bottom: 1rem;
+
+        &.submit-button {
+            justify-content: flex-end;
+            margin: 0;
+        }
+
+        &.textarea {
+            margin-bottom: 2rem;
+        }
+    }
+
+    .label {
+        @include copy;
+        flex-basis: 50%;
+        text-align: right;
+        padding-right: 1rem;
+    }
+
+    .input {
+        @include copy;
+        margin-left: 1rem;
+        padding: .5rem;
+        border: 0;
+        border-bottom: 1px solid $md-dol-hint;
+        flex-basis: 50%;
+        width: 100%;
+
+        &:focus {
+            outline: none;
+            border-bottom: 1px solid $orange;
+        }
+
+        &--no-border {
+            border: 0;
+        }
+
+        &.textarea {
+            resize: none;
+            border: 1px solid $md-dol-hint;
+
+            &:focus {
+                outline: none;
+                border: 1px solid $orange;
+            }
+        }
+
+        .attending {
+            // margin: 0 1rem;
+        }
+    }
+
+    .label-container,
+    .input-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .label-container {
+        text-align: right;
+    }
+
+    fieldset {
+        padding: 3rem 6rem;
+    }
+
+    legend {
+        @include copy;
+        padding: 0 1rem;
+    }
+
+    .button {
+        border: 0;
+    }
+
+}
