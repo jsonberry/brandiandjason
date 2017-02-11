@@ -1,23 +1,17 @@
-@mixin respond($device, $size, $orientation: null) {
-    @if ($orientation != null) {
-        @media screen and (min-width: calc-width($device, $size)) and (orientation: $orientation) {
-            @content;
-        }
-    } @else {
-        @media screen and (min-width: calc-width($device, $size)) {
-            @content;
-        }
-    }
-}
+@mixin when-wider-than($target) {
 
-@mixin align($alignment) {
-    @media (orientation: $alignment) {
+    @media screen and (min-width: get-breakpoint($target)) {
         @content;
     }
+
 }
 
-@mixin retina {
-    @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) { @content; }
+@mixin when-less-than($target) {
+
+    @media screen and (max-width: get-breakpoint($target) - 1) {
+        @content;
+    }
+
 }
 
 @mixin nav-link {
@@ -30,10 +24,10 @@
 @mixin heading {
     font-family: jSans-regular, sans-serif;
     text-transform: lowercase;
-    margin-bottom: 5rem;
-    font-size: 6rem;
-    font-weight: 400;
     color: $md-dol-primary;
+    font-weight: 400;
+    margin-bottom: 3rem;
+    font-size: 6rem;
 }
 
 @mixin subheading {

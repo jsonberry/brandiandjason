@@ -1,10 +1,9 @@
-@function calc-width($device, $size) {
-    $d: map-get($device-list, $device);
-    $s: 0 !default;
+@function get-breakpoint($target) {
+    $breakpoint: map-get($breakpoints, $target);
 
-    @if ($size == large) {
-        $s: map-get($large-list, $device);
+    @if $breakpoint == null {
+        @warn("You tried to respond_to '#{$target}'. Please use one of these available breakpoints - #{$allowed-breakpoint-targets}");
     }
 
-    @return $d + $s;
+    @return $breakpoint;
 }

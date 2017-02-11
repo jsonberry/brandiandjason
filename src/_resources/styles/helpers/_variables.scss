@@ -1,15 +1,6 @@
-$device-list:(
-    phone: 0,
-    tab: 600px,
-    laptop: 1024px,
-    desktop: 1600px,
-    cinema: 2560px,
-    5k: 5120px
-);
-
-$large-list: (
-    phone: 360px,
-    tab: 168px,
-    laptop : 256px,
-    desktop: 320px
+$breakpoints:(
+    mobile: 320px,
+    tablet: 640px,
+    small_desktop: 960px,
+    large_desktop: 1280px
 );

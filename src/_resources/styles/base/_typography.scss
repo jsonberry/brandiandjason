@@ -12,4 +12,9 @@
     .font-regular {
         font-family: jSans-regular, sans-serif;
     }
+
+    .loader[data-text]:before {
+        font-family: jSans-light, sans-serif;
+        font-size: 1.5rem;
+    }
 }

@@ -1,37 +1,88 @@
 .section.journey {
-    // background-color: $blue;
 
     .heading {
-        @include heading;
         text-align: center;
-    }
-
-    .subheading {
-        @include subheading;
-    }
-
-    .copy {
-        @include copy;
     }
 
     .brandi {
-        text-align: left;
         margin-bottom: 3rem;
+
+        .subheading {
+            text-align: center;
+
+            @include when-wider-than(small_desktop) {
+                text-align: left;
+            }
+        }
     }
 
     .jason {
-        text-align: right;
         margin-left: auto;
         margin-bottom: 5rem;
+
+        .subheading {
+            text-align: center;
+
+            @include when-wider-than(small_desktop) {
+                text-align: right;
+            }
+        }
+
+        .copy {
+            text-align: left;
+
+            @include when-wider-than(small_desktop) {
+                text-align: right;
+            }
+        }
     }
 
     .bandj {
-        text-align: center;
+        .subheading {
+            text-align: center;
+        }
+
+        .copy {
+            text-align: left;
+
+            @include when-wider-than(small_desktop) {
+                text-align: center;
+            }
+        }
     }
 
     .avatar {
-        width: 250px;
-        height: 250px;
+        width: 175px;
+        height: 175px;
+
+        @include when-wider-than(small_desktop) {
+            width: 250px;
+            height: 250px;
+        }
+
+        &.mobile {
+            display: block;
+
+            @include when-wider-than(small_desktop) {
+                display: none;
+            }
+        }
+
+        &.desktop {
+            display: none;
+
+            @include when-wider-than(small_desktop) {
+                display: block;
+            }
+        }
+
+        &-container {
+            &.mobile {
+                display: flex;
+                justify-content: center;
+                margin-bottom: 1rem;
+            }
+        }
     }
 
 }

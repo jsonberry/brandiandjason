@@ -4,6 +4,7 @@
     background-color: $white;
 
     .title {
+        font-family: jSans-regular, sans-serif;
         font-weight: 400;
         font-size: 6rem;
         line-height: .9;
@@ -11,10 +12,7 @@
     }
 
     .subheading {
-        @include subheading;
         font-size: 1.7rem;
-        font-style: italic;
-        margin-bottom: 2rem;
     }
 
     .divider {
