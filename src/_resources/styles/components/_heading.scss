@@ -1,0 +1,13 @@
+.heading {
+    font-family: jSans-regular, sans-serif;
+    text-transform: lowercase;
+    color: $md-dol-primary;
+    font-weight: 400;
+    font-size: 3rem;
+    margin-bottom: 2.5rem;
+
+    @include when-wider-than(small_desktop) {
+        font-size: 6rem;
+        margin-bottom: 3rem;
+    }
+}

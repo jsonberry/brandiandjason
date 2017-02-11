@@ -1,33 +1,37 @@
 .nav {
-    position: fixed;
-    width: 100%;
-    padding: 1rem 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: $white;
-    box-shadow: 2px 2px 2px 1px $md-dol-divider;
+    display: none;
 
-    &__item {
-        @include nav-link;
-        display: inline-block;
-        color: $md-dol-secondary;
-        text-decoration: none;
-        padding-right: 2rem;
-        transition: color 250ms ease;
+    @include when-wider-than(small_desktop) {
+        position: fixed;
+        width: 100%;
+        padding: 1rem 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: $white;
+        box-shadow: 2px 2px 2px 1px $md-dol-divider;
 
-        &:hover {
-            color: $md-dol-primary;
-        }
-
-        &:visited {
+        &__item {
+            @include nav-link;
+            display: inline-block;
             color: $md-dol-secondary;
-        }
+            text-decoration: none;
+            padding-right: 2rem;
+            transition: color 250ms ease;
 
-        &--siteId {
-            text-transform: lowercase;
-            font-size: 2rem;
-            padding-left: 2rem;
+            &:hover {
+                color: $md-dol-primary;
+            }
+
+            &:visited {
+                color: $md-dol-secondary;
+            }
+
+            &--siteId {
+                text-transform: lowercase;
+                font-size: 2rem;
+                padding-left: 2rem;
+            }
         }
     }
 
