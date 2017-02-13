@@ -12,4 +12,12 @@
         color: $md-lod-primary;
         padding: 5rem 0;
     }
+
+    &.home {
+        .heading {
+            padding: 10rem 0 5rem;
+            max-width: 35rem;
+            margin: 0 auto;
+        }
+    }
 }
