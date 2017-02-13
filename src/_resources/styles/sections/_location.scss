@@ -1,6 +1,17 @@
 .section.location {
-    .heading {
+    text-align: center;
+
+    @include when-wider-than(small_desktop) {
+        text-align: left;
+    }
+
+    .subheading {
+        margin-bottom: 0;
+    }
+
+    .date {
         text-align: center;
+        margin-bottom: 3rem;
     }
 
     .address {
@@ -23,16 +34,12 @@
         flex-direction: column;
     }
 
-    .date {
-        text-align: center;
-    }
-
     .time {
         @include subheading;
         font-weight: 600;
     }
 
-    .article {
+    .block {
         margin-bottom: 3rem;
     }
 
