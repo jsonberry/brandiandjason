@@ -1,5 +1,5 @@
 .section {
-    padding: 3rem 1rem;
+    padding: 3rem;
 
     @include when-wider-than(small_desktop) {
         padding: 5rem 2rem;

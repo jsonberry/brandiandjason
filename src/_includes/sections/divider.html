@@ -1,1 +1,8 @@
-<section class="section divider" style="background-image: url('../../assets/images/{{ include.image }}');"></section>
+<section
+    class="section divider"
+    style="background-image: linear-gradient(to top, rgba(0,0,0,.38), rgba(0,0,0,.38)), url('../../assets/images/{{ include.image }}');"
+    id="{{ include.anchor }}">
+        <h2 class="heading">
+            {{ include.title }}
+        </h2>
+</section>

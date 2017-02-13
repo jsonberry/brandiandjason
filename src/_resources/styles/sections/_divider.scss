@@ -1,7 +1,16 @@
 .section.divider {
     background-repeat: no-repeat;
     background-position: center center;
-    background-attachment: fixed;
     background-size: cover;
-    padding: 10rem;
+    // padding: 5rem;
+
+    @include when-wider-than(small_desktop) {
+        padding: 10rem 0 4rem;
+        background-attachment: fixed;
+    }
+
+    .heading {
+        text-align: center;
+        color: $md-lod-primary;
+    }
 }
