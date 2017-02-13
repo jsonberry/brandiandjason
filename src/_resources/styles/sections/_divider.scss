@@ -2,15 +2,14 @@
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
-    // padding: 5rem;
 
     @include when-wider-than(small_desktop) {
-        padding: 10rem 0 4rem;
         background-attachment: fixed;
     }
 
     .heading {
         text-align: center;
         color: $md-lod-primary;
+        padding: 5rem 0;
     }
 }

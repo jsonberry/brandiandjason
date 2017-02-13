@@ -1,10 +1,5 @@
-.section.home {
+.section.landing-home {
     text-align: center;
-    // padding-top: 6rem;
-
-    @include when-wider-than(small_desktop) {
-        padding: 20rem;
-    }
 
     .title {
         font-family: jSans-regular, sans-serif;
