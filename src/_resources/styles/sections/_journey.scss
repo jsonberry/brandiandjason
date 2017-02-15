@@ -28,6 +28,10 @@
 
     .bandj {
         text-align: center;
+
+        @include when-wider-than(small_desktop) {
+            text-align: left;
+        }
     }
 
     .avatar {
