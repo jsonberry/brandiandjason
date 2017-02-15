@@ -5,9 +5,11 @@
     display: inline-block;
     // Lineheight, height, padding, all to offset the empty space beneath the font
     // This is specific to the jSans-light font being used here
-    line-height: 2.2rem;
-    height: 2rem;
-    padding: 0 2rem;
+    // line-height: 2.2rem;
+    // height: 2rem;
+    // padding: 0 2rem;
+    font-size: 2rem;
+    padding: .5rem 4rem;
     border-radius: 2rem;
     color: $md-lod-primary;
     background-color: $blue;
