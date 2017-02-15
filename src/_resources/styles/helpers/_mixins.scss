@@ -26,7 +26,6 @@
     text-transform: lowercase;
     color: $md-dol-primary;
     font-weight: 400;
-    // margin-bottom: 3rem;
     font-size: 6rem;
 }
 
@@ -40,7 +39,7 @@
 @mixin copy {
     font-family: jSans-light, sans-serif;
     font-size: 1.5rem;
-    line-height: 2.14285714285714rem;
+    line-height: 1.64285714285714rem;
     font-weight: 300;
     color: $md-dol-secondary;
 }

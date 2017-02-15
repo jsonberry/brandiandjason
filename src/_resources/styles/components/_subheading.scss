@@ -2,11 +2,11 @@
     font-family: jSans-light, sans-serif;
     font-weight: 300;
     color: $md-dol-primary;
-    font-size: 2rem;
+    font-size: 2.85714285714286rem;
     margin-bottom: .4rem;
 
     @include when-wider-than(small_desktop) {
         font-size: 3rem;
-        margin-bottom: 2rem;
+        // margin-bodttom: 2rem;
     }
 }

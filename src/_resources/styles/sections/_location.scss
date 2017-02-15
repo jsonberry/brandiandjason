@@ -6,7 +6,7 @@
     }
 
     .subheading {
-        margin-bottom: 0;
+        // margin-bottom: 0;
     }
 
     .date {
@@ -15,8 +15,6 @@
     }
 
     .address {
-        font-style: normal;
-
         &-container {
             display: flex;
             flex-direction: column;

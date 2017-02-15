@@ -2,8 +2,8 @@
     font-family: jSans-light, sans-serif;
     font-weight: 300;
     color: $md-dol-secondary;
-    font-size: 1rem;
-    line-height: 1.5rem;
+    font-size: 1.42857142857143rem;
+    line-height: 2.14285714285715rem;
 
     @include when-wider-than(small_desktop) {
         line-height: 2.14285714285714rem;

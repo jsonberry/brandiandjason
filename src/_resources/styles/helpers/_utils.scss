@@ -18,6 +18,10 @@
 }
 
 .content {
-    max-width: 50rem;
+    max-width: 39.57142857142857rem;
     margin: 0 auto;
+
+    @include when-wider-than(small_desktop) {
+        max-width: 50rem;
+    }
 }
