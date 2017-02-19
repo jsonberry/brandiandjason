@@ -109,9 +109,9 @@
 	        // });
 	    });
 	
-	    $('.location-subhead-container').on('click', function (e) {
+	    $('.block-heading-container').on('click', function (e) {
 	        $(this).children().filter('svg').toggleClass('open');
-	        $(this).next('.copy').slideToggle();
+	        $(this).next('.block-info-container').slideToggle();
 	    });
 	});
 	

@@ -1,3 +1,5 @@
+{% assign content = site.data.content.portland %}
+
 <section class="section portland">
     <div class="content">
         <h3 class="subheading category">
@@ -12,9 +14,27 @@
                 Portland, OR 97205
             </address>
         </a>
-        <h3 class="subheading category">
-            Food
-        </h3>
+        <div class="expect block">
+            <div class="block-heading-container">
+                <h3 class="subheading">
+                    Food &amp; Drink
+                </h3>
+                <svg class="icon arrow" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="60px" height="80px" viewBox="0 0 60 80" xml:space="preserve">
+                    <polyline fill="none" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" points="
+                    0.375,0.375 45.63,38.087 0.375,75.8 "/>
+                </svg>
+            </div>
+            <div class="block-info-container">
+                <p class="copy">
+                    There are some delicious places to eat and drink in this town. Check out some of our faves:
+                </p>
+                {% for rest in content.foodAndDrink.restaurants %}
+                    <div class="rest-container">
+                        <a href="{{rest.href}}" class="link">{{rest.cta}}</a> <span class="copy">{{rest.copy}}</span>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
         <h3 class="subheading category">
             Activities
         </h3>
