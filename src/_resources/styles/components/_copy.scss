@@ -1,12 +1,10 @@
 .copy {
-    font-family: jSans-light, sans-serif;
-    font-weight: 300;
-    color: $md-dol-secondary;
-    font-size: 1.42857142857143rem;
-    line-height: 2.14285714285715rem;
-
-    @include when-wider-than(small_desktop) {
-        line-height: 2.14285714285714rem;
-        font-size: 1.5rem;
+    font: {
+        family: jSans-light, sans-serif;
+        weight: 300;
+        size: 1.2rem;
     }
+
+    line-height: 1.85714285714286rem;
+    color: $md-dol-secondary;
 }

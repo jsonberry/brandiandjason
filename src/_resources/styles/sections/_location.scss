@@ -6,12 +6,20 @@
     }
 
     .subheading {
-        // margin-bottom: 0;
+        display: inline;
     }
 
     .date {
+        display: block;
         text-align: center;
         margin-bottom: 3rem;
+    }
+
+    .copy {
+        &.center {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
     }
 
     .address {
@@ -20,6 +28,7 @@
             flex-direction: column;
             justify-content: space-between;
             align-items: center;
+            margin-bottom: 3rem;
 
             @include when-wider-than(small_desktop) {
                 flex-direction: row;
@@ -37,8 +46,21 @@
         font-weight: 600;
     }
 
-    .block {
+    .location-block {
         margin-bottom: 3rem;
+        padding-bottom: 1rem;
+        border-bottom: 1px solid $md-dol-divider;
+
+        .copy {
+            display: none;
+        }
+    }
+
+    .location-subhead-container {
+        &:hover,
+        &:focus {
+            cursor: pointer;
+        }
     }
 
     // Simple overlay to disable the mouse scroll by default on the map

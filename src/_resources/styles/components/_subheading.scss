@@ -6,7 +6,6 @@
     margin-bottom: .4rem;
 
     @include when-wider-than(small_desktop) {
-        font-size: 3rem;
-        // margin-bodttom: 2rem;
+        font-size: 2rem;
     }
 }

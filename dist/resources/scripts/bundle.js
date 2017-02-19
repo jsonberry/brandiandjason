@@ -55,7 +55,7 @@
 	        }, 1000);
 	    });
 	
-	    $('#rsvp-form').one('submit', function (e) {
+	    $('#rsvp-form').on('submit', function (e) {
 	        e.preventDefault;
 	        var baseURL = 'https://docs.google.com/forms/d/e/';
 	        var formId = '1FAIpQLSdGUf3zSOVNZJ0zPsayqP4U1VuGvrhFUQh09Z0oP905JU-yXg/';
@@ -78,13 +78,13 @@
 	            timeoutProgressbar: true,
 	            transitionIn: 'fadeInUp',
 	            transitionOut: 'fadeOutDown',
-	            // attached: 'bottom',
 	            pauseOnHover: true,
 	            onOpened: function onOpened() {
 	                console.log('i opened');
 	            },
 	            onClosed: function onClosed() {
 	                $('#rsvp').fadeOut();
+	                $('a[href="#rsvp"]').fadeOut();
 	            }
 	        });
 	
@@ -96,9 +96,9 @@
 	            return a + ('entry.' + gInputIds[i] + '=' + encodeURIComponent(v.value) + '&');
 	        }, new String());
 	        var data = '' + responseData + submitRef;
-	        // let submitURL = `${baseURL}${formId}formResponse?${responseData}${submitRef}`;
-	        // console.log(submitURL);
-	        // $(this)[0].action = submitURL;
+	        var submitURL = '' + baseURL + formId + 'formResponse?' + responseData + submitRef;
+	        console.log(submitURL);
+	        $(this)[0].action = submitURL;
 	        // $.ajax({
 	        //     url: 'https://docs.google.com/forms/d/e/1FAIpQLSdGUf3zSOVNZJ0zPsayqP4U1VuGvrhFUQh09Z0oP905JU-yXg/formResponse?',
 	        //     method: 'POST',
@@ -107,6 +107,11 @@
 	        // .always(function(e) {
 	        //     console.log(e);
 	        // });
+	    });
+	
+	    $('.location-subhead-container').on('click', function (e) {
+	        $(this).children().filter('svg').toggleClass('open');
+	        $(this).next('.copy').slideToggle();
 	    });
 	});
 	

@@ -1,4 +1,6 @@
 .section.rsvp {
+    padding-top: 1.45rem;
+
     .title {
         max-width: 360px;
 
@@ -76,17 +78,6 @@
 
     .label-container {
         text-align: right;
-    }
-
-    .fieldset {
-        padding: 3rem 6rem;
-        border-color: $blue;
-        border-style: solid;
-    }
-
-    .legend {
-        @include copy;
-        padding: 0 1rem;
     }
 
     .button {

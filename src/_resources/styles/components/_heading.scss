@@ -6,6 +6,6 @@
     font-size: 3rem;
 
     @include when-wider-than(small_desktop) {
-        font-size: 6rem;
+        font-size: 5rem;
     }
 }

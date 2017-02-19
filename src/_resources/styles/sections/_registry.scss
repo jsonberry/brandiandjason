@@ -1,35 +1,14 @@
 .section.registry {
     text-align: center;
-
-    .heading {
-        text-align: center;
+    padding: {
+        top: 6rem;
+        left: 0;
+        right: 0;
+        bottom: 0;
     }
 
-    .excerpt {
-        margin-bottom: 3rem;
-    }
-
-    .cta-container {
-        display: flex;
-        justify-content: center;
-        margin-bottom: 3rem;
-    }
-
-    .flex-container {
-        justify-content: space-between;
-
-        .copy {
-            flex-basis: 50%;
-            padding-right: 3rem;
-            text-align: right;
-        }
-
-        .link-container {
-            flex-basis: 50%;
-            justify-content: space-around;
-            padding-left: 3rem;
-            border-left: 1px solid $md-dol-divider;
-            text-align: left;
-        }
+    .content {
+        padding-bottom: 6rem;
+        border-bottom: 1px solid $md-dol-divider;
     }
 }

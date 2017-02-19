@@ -7,7 +7,7 @@ $(function() {
         }, 1000);
     });
 
-    $('#rsvp-form').one('submit',function(e) {
+    $('#rsvp-form').on('submit',function(e) {
         e.preventDefault;
         let baseURL = 'https://docs.google.com/forms/d/e/';
         let formId = '1FAIpQLSdGUf3zSOVNZJ0zPsayqP4U1VuGvrhFUQh09Z0oP905JU-yXg/';
@@ -36,13 +36,13 @@ $(function() {
             timeoutProgressbar: true,
             transitionIn: 'fadeInUp',
             transitionOut: 'fadeOutDown',
-            // attached: 'bottom',
             pauseOnHover: true,
             onOpened: function() {
                 console.log('i opened');
             },
             onClosed: function() {
                 $('#rsvp').fadeOut();
+                $('a[href="#rsvp"]').fadeOut();
             }
         });
 
@@ -52,9 +52,9 @@ $(function() {
         let formData = $(this).serializeArray();
         let responseData = formData.reduce((a, v, i) => a + `entry.${gInputIds[i]}=${encodeURIComponent(v.value)}&`, new String);
         let data = `${responseData}${submitRef}`;
-        // let submitURL = `${baseURL}${formId}formResponse?${responseData}${submitRef}`;
-        // console.log(submitURL);
-        // $(this)[0].action = submitURL;
+        let submitURL = `${baseURL}${formId}formResponse?${responseData}${submitRef}`;
+        console.log(submitURL);
+        $(this)[0].action = submitURL;
         // $.ajax({
         //     url: 'https://docs.google.com/forms/d/e/1FAIpQLSdGUf3zSOVNZJ0zPsayqP4U1VuGvrhFUQh09Z0oP905JU-yXg/formResponse?',
         //     method: 'POST',
@@ -63,6 +63,11 @@ $(function() {
         // .always(function(e) {
         //     console.log(e);
         // });
+    });
+
+    $('.location-subhead-container').on('click', function(e) {
+        $(this).children().filter('svg').toggleClass('open');
+        $(this).next('.copy').slideToggle();
     });
 
 });
