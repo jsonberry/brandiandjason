@@ -2,14 +2,13 @@
     text-align: center;
     padding: 3.5rem 0;
 
-    .divider {
-        // font-weight: 400;
-        // font-size: 1rem;
+    .arrow {
+        width: 2rem;
+        height: 2rem;
+    }
 
-        @include when-wider-than(small_desktop) {
-            // font-size: 1.7rem;
-            // padding: 0 1rem;
-        }
+    .copy:last-of-type {
+        margin-bottom: 2rem;
     }
 
 }

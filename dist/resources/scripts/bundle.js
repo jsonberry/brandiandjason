@@ -49,9 +49,10 @@
 	$(function () {
 	    $('a').click(function (e) {
 	        var scrollTo = e.currentTarget.hash;
+	        var scrollToPosition = $(scrollTo).offset().top - 61;
 	
 	        $('html, body').animate({
-	            scrollTop: $(scrollTo).offset().top
+	            scrollTop: scrollToPosition
 	        }, 1000);
 	    });
 	

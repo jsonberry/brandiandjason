@@ -1,9 +1,10 @@
 $(function() {
     $('a').click(function(e) {
         let scrollTo = e.currentTarget.hash;
+        let scrollToPosition = $(scrollTo).offset().top - 61;
 
         $('html, body').animate({
-            scrollTop: $(scrollTo).offset().top
+            scrollTop: scrollToPosition
         }, 1000);
     });
 
