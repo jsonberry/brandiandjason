@@ -1,3 +1,5 @@
+{% assign content = site.data.journey %}
+
 <section class="section journey">
     <div class="content">
         <div class="brandi">
@@ -6,8 +8,8 @@
             </div>
             <div class="flex-container">
                 <div>
-                    <h3 class="subheading">Brandi</h3>
-                    <p class="copy">{{page.journey_brandi}}</p>
+                    <h3 class="subheading">{{content.brandi.heading}}</h3>
+                    <p class="copy">{{content.brandi.copy}}</p>
                 </div>
                 <img class="avatar desktop" src="/assets/images/brandi.svg" alt="">
             </div>
@@ -19,14 +21,14 @@
             <div class="flex-container">
                 <img class="avatar desktop" src="/assets/images/jason.svg" alt="">
                 <div>
-                    <h3 class="subheading">Jason</h3>
-                    <p class="copy">{{page.journey_jason}}</p>
+                    <h3 class="subheading">{{content.jason.heading}}</h3>
+                    <p class="copy">{{content.jason.copy}}</p>
                 </div>
             </div>
         </div>
         <div class="bandj">
-            <h3 class="subheading">The Road Ahead</h3>
-            <p class="copy">{{page.journey_together}}</p>
+            <h3 class="subheading">{{content.the_road_ahead.heading}}</h3>
+            <p class="copy">{{content.the_road_ahead.copy}}</p>
         </div>
     </div>
 </section>

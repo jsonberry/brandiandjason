@@ -1,18 +1,20 @@
+{% assign content = site.data.location %}
+
 <section class="section location">
     <div class="content">
         <h3 class="subheading date">
-            Saturday, July 15th, 2017 @ 11 am
+            {{content.heading}}
         </h3>
         <div class="address-container">
             <div class="info">
                 <h3 class="subheading">
-                    Noble Rot
+                    {{content.restaurantName}}
                 </h3>
                 <a href="https://goo.gl/maps/MUWKqz8u6UU2" class="link">
                     <address class="address link">
-                        1111 East Burnside <br />
-                        Fourth Floor <br />
-                        Portland, OR 97201
+                        {{content.addressLineOne}} <br />
+                        {{content.addressLineTwo}}<br />
+                        {{content.addressLineThree}}
                     </address>
                 </a>
             </div>
@@ -28,7 +30,7 @@
             </div>
         </div>
         <p class="copy center">
-            We’ll feed you an awesome brunch and drinks right after the ceremony. But don’t come hangry!
+            {{content.copy}}
         </p>
         <div class="expect block">
             <div class="block-heading-container">
