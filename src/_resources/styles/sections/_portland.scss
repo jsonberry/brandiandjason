@@ -1,4 +1,14 @@
 .section.portland {
+    text-align: center;
+
+    .copy:first-child {
+        margin-bottom: 1rem;
+    }
+
+    @include when-wider-than(small_desktop) {
+        text-align: left;
+    }
+
     .activities {
         .copy {
             margin-bottom: 1rem;

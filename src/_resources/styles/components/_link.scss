@@ -2,8 +2,12 @@
     font: {
         family: jSans-light, sans-serif;
         weight: 300;
-        size: 1.2rem;
+        size: 1.5rem;
         style: normal;
+    }
+
+    @include when-wider-than(small_desktop) {
+        font-size: 1.2rem;
     }
 
     text-decoration: none;

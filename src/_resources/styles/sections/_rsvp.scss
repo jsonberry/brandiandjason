@@ -1,4 +1,5 @@
 .section.rsvp {
+    text-align: center;
     padding-top: 1.45rem;
 
     .title {
@@ -15,16 +16,27 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        padding: 0 3.5rem;;
+        border: 1px solid $md-dol-divider;
     }
 
     .heading {
         @include heading;
     }
 
+    .excerpt {
+        margin-bottom: 1rem;
+    }
+
     .form-group {
         display: flex;
+        flex-direction: column;
+        margin-bottom: 3rem;
+        @include when-wider-than(small_desktop) {
+            flex-direction: row;
+        }
+
         align-items: center;
-        margin-bottom: 1rem;
 
         &.submit-button {
             justify-content: flex-end;
@@ -38,8 +50,11 @@
 
     .label {
         flex-basis: 50%;
-        text-align: right;
-        padding-right: 1rem;
+        text-align: center;
+        @include when-wider-than(small_desktop) {
+            text-align: right;
+            padding-right: 1rem;
+        }
     }
 
     .input {
@@ -55,10 +70,6 @@
             border-bottom: 1px solid $orange;
         }
 
-        &--no-border {
-            border: 0;
-        }
-
         &.textarea {
             resize: none;
             border: 1px solid $md-dol-hint;
@@ -70,14 +81,9 @@
         }
     }
 
-    .label-container,
     .input-container {
         display: flex;
-        flex-direction: column;
-    }
-
-    .label-container {
-        text-align: right;
+        justify-content: space-around;
     }
 
     .button {

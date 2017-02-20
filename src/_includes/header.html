@@ -15,7 +15,9 @@
         <script type="text/javascript" src="/resources/scripts/bundle.js"></script>
         {% include fonts.html %}
     </head>
-    {% include loader.html %}
     <body>
+        {% include hamburger.html %}
+        {% include loader.html %}
+        {% include nav-mobile.html %}
         {% include nav.html %}
             <main class="main {{page.id}}" aria-label="Content">

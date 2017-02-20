@@ -47,7 +47,13 @@
 	'use strict';
 	
 	$(function () {
-	    $('a').click(function (e) {
+	
+	    /*
+	    *   Anchor Scroll Animation
+	    */
+	    $('a').on('click', function (e) {
+	        // Always hide the mobile nav upon hitting a nav item
+	        $('.nav-mobile').fadeOut();
 	        var scrollTo = e.currentTarget.hash;
 	        var scrollToPosition = $(scrollTo).offset().top - 61;
 	
@@ -56,41 +62,45 @@
 	        }, 1000);
 	    });
 	
-	    $('#rsvp-form').on('submit', function (e) {
-	        e.preventDefault;
-	        var baseURL = 'https://docs.google.com/forms/d/e/';
-	        var formId = '1FAIpQLSdGUf3zSOVNZJ0zPsayqP4U1VuGvrhFUQh09Z0oP905JU-yXg/';
-	        var submitRef = 'submit=8869835504486836160';
+	    /*
+	    *   Fade the Mobile Nav in
+	    */
+	    $('.nav-mobile-toggle').on('click', function (e) {
+	        $('.nav-mobile').fadeIn();
+	    });
 	
-	        var gInputIds = ['216944502', '2016456273', '971476322', '597427551', '1223284537'];
+	    /*
+	    *   Toggle for reveal sections
+	    */
+	    $('.block-heading-container').on('click', function (e) {
+	        $(this).children().filter('svg').toggleClass('open');
+	        $(this).next('.block-info-container').slideToggle();
+	    });
 	
+	    $('#modal').iziModal({
+	        title: 'RSVP Successful! Thank you!',
+	        icon: 'icon-check',
+	        headerColor: '#00af66',
+	        width: 600,
+	        timeout: 10000,
+	        timeoutProgressbar: true,
+	        transitionIn: 'fadeInUp',
+	        transitionOut: 'fadeOutDown',
+	        pauseOnHover: true
+	    });
+	
+	    $('#rsvp-form').one('submit', function (e) {
 	        $('.loader').addClass('loader-default is-active');
 	        $('.loader').attr({
 	            'data-half': '',
 	            'data-text': 'Submitting your RSVP'
 	        });
 	
-	        $('#modal').iziModal({
-	            title: 'RSVP Successful! Thank you!',
-	            icon: 'icon-check',
-	            headerColor: '#00af66',
-	            width: 600,
-	            timeout: 10000,
-	            timeoutProgressbar: true,
-	            transitionIn: 'fadeInUp',
-	            transitionOut: 'fadeOutDown',
-	            pauseOnHover: true,
-	            onOpened: function onOpened() {
-	                console.log('i opened');
-	            },
-	            onClosed: function onClosed() {
-	                $('#rsvp').fadeOut();
-	                $('a[href="#rsvp"]').fadeOut();
-	            }
-	        });
+	        var baseURL = 'https://docs.google.com/forms/d/e/';
+	        var formId = '1FAIpQLSdGUf3zSOVNZJ0zPsayqP4U1VuGvrhFUQh09Z0oP905JU-yXg/';
+	        var submitRef = 'submit=8869835504486836160';
 	
-	        setTimeout(success, 3000);
-	        //  data-half data-blink data-text="Submitting your RSVP..."
+	        var gInputIds = ['216944502', '2016456273', '971476322', '597427551', '1223284537'];
 	
 	        var formData = $(this).serializeArray();
 	        var responseData = formData.reduce(function (a, v, i) {
@@ -98,34 +108,21 @@
 	        }, new String());
 	        var data = '' + responseData + submitRef;
 	        var submitURL = '' + baseURL + formId + 'formResponse?' + responseData + submitRef;
-	        console.log(submitURL);
 	        $(this)[0].action = submitURL;
-	        // $.ajax({
-	        //     url: 'https://docs.google.com/forms/d/e/1FAIpQLSdGUf3zSOVNZJ0zPsayqP4U1VuGvrhFUQh09Z0oP905JU-yXg/formResponse?',
-	        //     method: 'POST',
-	        //     data: data
-	        // })
-	        // .always(function(e) {
-	        //     console.log(e);
-	        // });
-	    });
+	        setTimeout(onSuccess, 2000);
 	
-	    $('.block-heading-container').on('click', function (e) {
-	        $(this).children().filter('svg').toggleClass('open');
-	        $(this).next('.block-info-container').slideToggle();
+	        function onSuccess() {
+	            $('.loader').removeClass('loader-default is-active');
+	            $('.loader').removeAttr('data-half');
+	            $('.loader').removeAttr('data-text');
+	            setTimeout(successModal, 500);
+	        }
+	
+	        function successModal() {
+	            $('#modal').iziModal('open');
+	        }
 	    });
 	});
-	
-	function success() {
-	    $('.loader').removeClass('loader-default is-active');
-	    $('.loader').removeAttr('data-half');
-	    $('.loader').removeAttr('data-text');
-	    setTimeout(removeStuff, 500);
-	}
-	
-	function removeStuff() {
-	    $('#modal').iziModal('open');
-	}
 
 /***/ }
 /******/ ]);

@@ -2,10 +2,14 @@
     font: {
         family: jSans-regular, sans-serif;
         weight: 300;
-        size: 1.2rem;
+        size: 1.5rem;
         style: normal;
     }
-
     line-height: 1.85714285714286rem;
     color: $md-dol-secondary;
+
+    @include when-wider-than(small_desktop) {
+        font-size: 1.2rem;
+    }
+
 }

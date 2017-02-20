@@ -3,9 +3,9 @@
     background-position: center center;
     background-size: cover;
     text-align: center;
-    padding-top: 10.5rem;
 
     @include when-wider-than(small_desktop) {
+        padding-top: 10.5rem;
         background-attachment: fixed;
     }
 
