@@ -1,0 +1,18 @@
+{% assign content = site.data.landing %}
+
+<section
+    class="section landing"
+    style="background-image: linear-gradient(to top, rgba(0,0,0,.38), rgba(0,0,0,.38)), url('../../assets/images/{{content.background}}');"
+    id="home">
+    <div>
+        <h2 class="heading">
+            {{content.title}}
+        </h2>
+        <p class="subheading">
+            {{content.date}} | {{content.time}} | {{content.location}}
+        </p>
+        <a href="#{{content.cta}}" class="button">
+            {{content.cta}}
+        </a>
+    </div>
+</section>

@@ -1,0 +1,20 @@
+.block {
+    margin-bottom: 3rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid $md-dol-divider;
+
+    .subheading {
+        display: inline;
+    }
+
+    &-info-container {
+        display: none;
+    }
+
+    &-heading-container {
+        &:hover,
+        &:focus {
+            cursor: pointer;
+        }
+    }
+}
