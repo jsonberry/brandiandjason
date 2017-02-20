@@ -1,0 +1,73 @@
+{
+    "landing": {
+        "title": "brandi & jason <br /> are getting married",
+        "date": "07.15.17",
+        "time": "11 am",
+        "location": "Noble Rot Restaurant, Portland, OR",
+        "linkHref": "#rsvp",
+        "linkCopy": "rsvp",
+        "bgImage": "coffee.jpg"
+    },
+    "journey": {},
+    "location": {},
+    "portland": {
+        "foodAndDrink": {
+            "heading": "Food &amp; Drink",
+            "subheading": "There are some delicious places to eat and drink in this town. Check out some of our faves:",
+            "restaurants": [
+                {
+                    "cta": "SWIFT",
+                    "href": "https://www.yelp.com/biz/swift-lounge-portland-2",
+                    "copy": "(For Brunch - $)"
+                },
+                {
+                    "cta": "Zell&CloseCurlyQuote;s Cafe",
+                    "href": "https://www.yelp.com/biz/zells-cafe-portland",
+                    "copy": "(Breakfast/Brunch - $$)"
+                },
+                {
+                    "cta": "Nong&CloseCurlyQuote;s Khao Man Ghai",
+                    "href": "https://www.yelp.com/biz/nongs-khao-man-gai-portland-2" ,
+                    "copy": "(Thai, Best Chicken and Rice ever - $)"
+                },
+                {
+                    "cta": "Por Que No",
+                    "href": "https://www.yelp.com/biz/por-que-no-taqueria-portland-2",
+                    "copy": "(Tacos! - $)"
+                },
+                {
+                    "cta": "SW Food Carts",
+                    "href": "http://www.foodcartsportland.com/maps/",
+                    "copy": "(For anything and everything - $)"
+                },
+                {
+                    "cta": "Toro Bravo",
+                    "href": "https://www.yelp.com/biz/toro-bravo-portland",
+                    "copy": "(Tapas, Spanish - $$/$$$)"
+                },
+                {
+                    "cta": "Andina",
+                    "href": "https://www.yelp.com/biz/andina-portland",
+                    "copy": "(Tapas, Peruvian - $$$)"
+                },
+                {
+                    "cta": "Papa Haydn",
+                    "href": "https://www.yelp.com/biz/papa-haydn-portland",
+                    "copy": "(For Dessert - $/$$)"
+                },
+                {
+                    "cta": "Salt and Straw",
+                    "href": "https://www.yelp.com/biz/salt-and-straw-portland",
+                    "copy": "(Ice Cream - $)"
+                },
+                {
+                    "cta": "Water Avenue Coffee",
+                    "href": "https://www.yelp.com/biz/water-avenue-coffee-portland",
+                    "copy": "(Coffee - $)"
+                },
+            ]
+        }
+    },
+    "registry": {},
+    "rsvp": {}
+}

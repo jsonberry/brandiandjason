@@ -1,0 +1,83 @@
+{% assign content = site.data.content.portland %}
+
+<section class="section portland">
+    <div class="content">
+        <div class="accommodations block">
+            <div class="block-heading-container">
+                <h3 class="subheading">
+                    Accommodations
+                </h3>
+                <svg class="icon arrow" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="60px" height="80px" viewBox="0 0 60 80" xml:space="preserve">
+                    <polyline fill="none" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" points="
+                    0.375,0.375 45.63,38.087 0.375,75.8 "/>
+                </svg>
+            </div>
+            <div class="block-info-container">
+                <p class="copy">
+                    There are many hotels to choose from for the weekend but the two below will put you in the middle of the hustle and bustle in downtown and are a short drive away from the venue.
+                </p>
+                <div class="entry">
+                    <a href="http://hotellucia.com/" class="link">
+                        Hotel Lucia
+                    </a>
+                    <address class="copy">
+                        400 SW Broadway<br />
+                        Portland, OR 97205
+                    </address>
+                </div>
+                <div class="entry">
+                    <a href="http://www.monaco-portland.com/hotels-in-portland-oregon/" class="link">
+                        Kimpton Hotel Monaco Portland
+                    </a>
+                    <address class="copy">
+                        506 SW Washington Street<br />
+                        Portland, OR 97204
+                    </address>
+                </div>
+            </div>
+        </div>
+        <div class="food-and-drink block">
+            <div class="block-heading-container">
+                <h3 class="subheading">
+                    Food &amp; Drink
+                </h3>
+                <svg class="icon arrow" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="60px" height="80px" viewBox="0 0 60 80" xml:space="preserve">
+                    <polyline fill="none" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" points="
+                    0.375,0.375 45.63,38.087 0.375,75.8 "/>
+                </svg>
+            </div>
+            <div class="block-info-container">
+                <p class="copy">
+                    There are some delicious places to eat and drink in this town. Check out some of our faves:
+                </p>
+                {% for rest in content.foodAndDrink.restaurants %}
+                    <div class="rest-container">
+                        <a href="{{rest.href}}" class="link">{{rest.cta}}</a> <span class="copy">{{rest.copy}}</span>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+        <div class="activities block">
+            <div class="block-heading-container">
+                <h3 class="subheading">
+                    Activities
+                </h3>
+                <svg class="icon arrow" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="60px" height="80px" viewBox="0 0 60 80" xml:space="preserve">
+                    <polyline fill="none" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" points="
+                    0.375,0.375 45.63,38.087 0.375,75.8 "/>
+                </svg>
+            </div>
+            <div class="block-info-container">
+                <p class="copy">
+                    Shop at <a href="http://www.portlandsaturdaymarket.com/visit-the-market/hours-directions/" class="link">Portland Saturday Market</a> and walk down row upon row of unique, handcrafted items, choose from a plethora of exotic foods to eat while listening to live music.
+                </p>
+                <p class="copy">
+                    Visit <a href="http://www.powells.com/locations/powells-city-of-books" class="link">Powell’s City of Books</a> to explore the largest used and new bookstore in the world. It takes up an entire city block and holds approximately one million books spread through 9 color-coded rooms and over 3,500 different sections including out-of-print and hard-to-find titles.
+                </p>
+                <p class="copy">
+                    Want to kick it in the outdoors? Visit the <a href="https://www.portlandoregon.gov/parks/finder/index.cfm?action=viewpark&propertyid=1113" class="link">International Rose Test Garden</a> or take a hike in <a href="http://www.forestparkconservancy.org/forest-park/" class="link">Forest Park</a>, Portland’s 5,200 acre urban forest. If you’d like more hiking options, hop in the car and head 35 minutes east and check out one of the many hikes in the <a href="https://www.fs.usda.gov/crgnsa" class="link">Columbia River Gorge</a>.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>

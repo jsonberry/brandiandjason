@@ -1,0 +1,10 @@
+.heading {
+    font-family: jSans-regular, sans-serif;
+    color: $md-dol-primary;
+    font-weight: 400;
+    font-size: 3rem;
+
+    @include when-wider-than(small_desktop) {
+        font-size: 5rem;
+    }
+}

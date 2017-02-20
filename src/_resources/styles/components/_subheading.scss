@@ -1,0 +1,11 @@
+.subheading {
+    font-family: jSans-light, sans-serif;
+    font-weight: 300;
+    color: $md-dol-primary;
+    font-size: 2.5rem;
+    margin-bottom: .4rem;
+
+    @include when-wider-than(small_desktop) {
+        font-size: 2rem;
+    }
+}

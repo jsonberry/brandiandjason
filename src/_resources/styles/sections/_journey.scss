@@ -1,0 +1,71 @@
+.section.journey {
+
+    .heading {
+        text-align: center;
+    }
+
+    .brandi {
+        margin-bottom: 1.5rem;
+        text-align: center;
+
+        @include when-wider-than(small_desktop) {
+            margin-bottom: 3rem;
+            text-align: left;
+        }
+    }
+
+    .jason {
+        margin-left: auto;
+        margin-bottom: 2.5rem;
+        text-align: center;
+
+        @include when-wider-than(small_desktop) {
+            margin-bottom: 5rem;
+            text-align: right;
+        }
+
+    }
+
+    .bandj {
+        text-align: center;
+
+        @include when-wider-than(small_desktop) {
+            text-align: left;
+        }
+    }
+
+    .avatar {
+        width: 175px;
+        height: 175px;
+
+        @include when-wider-than(small_desktop) {
+            width: 250px;
+            height: 250px;
+        }
+
+        &.mobile {
+            display: block;
+
+            @include when-wider-than(small_desktop) {
+                display: none;
+            }
+        }
+
+        &.desktop {
+            display: none;
+
+            @include when-wider-than(small_desktop) {
+                display: block;
+            }
+        }
+
+        &-container {
+            &.mobile {
+                display: flex;
+                justify-content: center;
+                margin-bottom: 1rem;
+            }
+        }
+    }
+
+}

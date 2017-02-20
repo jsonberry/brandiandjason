@@ -1,0 +1,22 @@
+title: Brandi and Jason
+
+source: src
+destination: dist
+
+exclude:
+- node_modules
+- bower_components
+- bower.json
+- package.json
+- gulpfile.js
+- citizen-logo.png
+- error.png
+- README.md
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "default"

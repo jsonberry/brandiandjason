@@ -1,0 +1,27 @@
+.section.divider {
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    text-align: center;
+
+    @include when-wider-than(small_desktop) {
+        background-attachment: fixed;
+    }
+
+    .heading {
+        color: $md-lod-primary;
+    }
+
+    &.home {
+        .heading {
+            padding: 10rem 0 5rem;
+            max-width: 35rem;
+            margin: 0 auto;
+        }
+
+        .subheading {
+            max-width: 35rem;
+            margin: 0 auto;
+        }
+    }
+}

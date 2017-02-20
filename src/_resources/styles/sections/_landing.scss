@@ -1,0 +1,21 @@
+.section.landing {
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    text-align: center;
+
+    @include when-wider-than(small_desktop) {
+        padding-top: 10.5rem;
+        background-attachment: fixed;
+    }
+
+    .heading {
+        color: $md-lod-primary;
+        margin-bottom: 2rem;
+    }
+
+    .subheading {
+        color: $md-lod-secondary;
+        margin-bottom: 2rem;
+    }
+}

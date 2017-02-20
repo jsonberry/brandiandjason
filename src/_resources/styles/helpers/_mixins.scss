@@ -1,0 +1,48 @@
+@mixin when-wider-than($target) {
+
+    @media screen and (min-width: get-breakpoint($target)) {
+        @content;
+    }
+
+}
+
+@mixin when-less-than($target) {
+
+    @media screen and (max-width: get-breakpoint($target) - 1) {
+        @content;
+    }
+
+}
+
+@mixin nav-link {
+    font-family: jSans-light, sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+@mixin heading {
+    font-family: jSans-regular, sans-serif;
+    color: $md-dol-primary;
+    font-weight: 400;
+    font-size: 6rem;
+}
+
+@mixin subheading {
+    font-family: jSans-light, sans-serif;
+    font-size: 3rem;
+    font-weight: 300;
+    color: $md-dol-primary;
+}
+
+@mixin copy {
+    font-family: jSans-light, sans-serif;
+    font-size: 1.5rem;
+    line-height: 1.64285714285714rem;
+    font-weight: 300;
+    color: $md-dol-secondary;
+}
+
+@mixin button {
+    font-weight: 600;
+}

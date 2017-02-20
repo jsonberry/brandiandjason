@@ -1,0 +1,34 @@
+{% assign content = site.data.journey %}
+
+<section class="section journey">
+    <div class="content">
+        <div class="brandi">
+            <div class="avatar-container mobile">
+                <img class="avatar mobile" src="/assets/images/brandi.svg" alt="">
+            </div>
+            <div class="flex-container">
+                <div>
+                    <h3 class="subheading">{{content.brandi.heading}}</h3>
+                    <p class="copy">{{content.brandi.copy}}</p>
+                </div>
+                <img class="avatar desktop" src="/assets/images/brandi.svg" alt="">
+            </div>
+        </div>
+        <div class="jason">
+            <div class="avatar-container mobile">
+                <img class="avatar mobile" src="/assets/images/jason.svg" alt="">
+            </div>
+            <div class="flex-container">
+                <img class="avatar desktop" src="/assets/images/jason.svg" alt="">
+                <div>
+                    <h3 class="subheading">{{content.jason.heading}}</h3>
+                    <p class="copy">{{content.jason.copy}}</p>
+                </div>
+            </div>
+        </div>
+        <div class="bandj">
+            <h3 class="subheading">Brandi + Jason</h3>
+            <p class="copy">{{content.together.copy}}</p>
+        </div>
+    </div>
+</section>

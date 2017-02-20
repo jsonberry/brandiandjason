@@ -1,0 +1,93 @@
+.section.rsvp {
+    text-align: center;
+    padding-top: 1.45rem;
+
+    .title {
+        max-width: 360px;
+
+        .image {
+            height: auto;
+            width: 100%;
+        }
+    }
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0 3.5rem;;
+        border: 1px solid $md-dol-divider;
+    }
+
+    .heading {
+        @include heading;
+    }
+
+    .excerpt {
+        margin-bottom: 1rem;
+    }
+
+    .form-group {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 3rem;
+        @include when-wider-than(small_desktop) {
+            flex-direction: row;
+        }
+
+        align-items: center;
+
+        &.submit-button {
+            justify-content: flex-end;
+            margin: 0;
+        }
+
+        &.textarea {
+            margin-bottom: 2rem;
+        }
+    }
+
+    .label {
+        flex-basis: 50%;
+        text-align: center;
+        @include when-wider-than(small_desktop) {
+            text-align: right;
+            padding-right: 1rem;
+        }
+    }
+
+    .input {
+        margin-left: 1rem;
+        padding: .5rem;
+        border: 0;
+        border-bottom: 1px solid $md-dol-hint;
+        flex-basis: 50%;
+        width: 100%;
+
+        &:focus {
+            outline: none;
+            border-bottom: 1px solid $orange;
+        }
+
+        &.textarea {
+            resize: none;
+            border: 1px solid $md-dol-hint;
+
+            &:focus {
+                outline: none;
+                border: 1px solid $orange;
+            }
+        }
+    }
+
+    .input-container {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .button {
+        border: 0;
+    }
+
+}

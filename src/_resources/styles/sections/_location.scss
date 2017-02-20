@@ -1,0 +1,73 @@
+.section.location {
+    text-align: center;
+
+    @include when-wider-than(small_desktop) {
+        text-align: left;
+    }
+
+    .date {
+        display: block;
+        text-align: center;
+        margin-bottom: 3rem;
+    }
+
+    .copy {
+        &.center {
+            margin-bottom: 3rem;
+            text-align: center;
+        }
+    }
+
+    .address {
+        &-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 3rem;
+
+            @include when-wider-than(small_desktop) {
+                flex-direction: row;
+            }
+
+            .info {
+                display: flex;
+                flex-direction: column;
+                text-transform: none;
+            }
+        }
+    }
+
+
+    .time {
+        @include subheading;
+        font-weight: 600;
+    }
+
+    // Simple overlay to disable the mouse scroll by default on the map
+    .overlay {
+        display: none;
+
+        @include when-wider-than(small_desktop) {
+            display: block;
+            background: transparent;
+            position: relative;
+            width: 400px;
+            height: 300px;
+            top: 300px;
+            margin-top: -300px;
+        }
+   }
+
+    .google-map {
+        display: none;
+
+        @include when-wider-than(small_desktop) {
+            display: block;
+            border: 0;
+            width: 500px;
+            height: 200px;
+        }
+    }
+
+}

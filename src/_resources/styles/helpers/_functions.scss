@@ -1,0 +1,9 @@
+@function get-breakpoint($target) {
+    $breakpoint: map-get($breakpoints, $target);
+
+    @if $breakpoint == null {
+        @warn("You tried to respond_to '#{$target}'. Please use one of these available breakpoints - #{$allowed-breakpoint-targets}");
+    }
+
+    @return $breakpoint;
+}

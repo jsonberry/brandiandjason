@@ -1,0 +1,27 @@
+.fouc-mask--loading {
+    opacity: 0;
+}
+
+.fouc-mask--loaded {
+    opacity: 1;
+    transition: opacity 350ms;
+}
+
+.flex {
+    &-container {
+        display: flex;
+
+        &.stack {
+            flex-direction: column;
+        }
+    }
+}
+
+.content {
+    max-width: 39.57142857142857rem;
+    margin: 0 auto;
+
+    @include when-wider-than(small_desktop) {
+        max-width: 50rem;
+    }
+}

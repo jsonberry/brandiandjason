@@ -1,0 +1,37 @@
+$black: rgba(0, 0, 0, .87);
+$white: rgba(255, 255, 255, 1);
+$blue: rgba(41, 121, 255, 1);
+$blue-inactive: rgba(41, 121, 255, .7);
+$sea-foam: #1695a3;
+$baby-blue: #acf0f2;
+$cream: rgba(243, 255, 226, 1);
+$orange: #eb7f00;
+
+$button: $blue;
+$link-inactive: $blue-inactive;
+$link-active: $blue;
+
+// Dark text on light backgrounds
+$md-dol-primary: $black;
+$md-dol-secondary: rgba(0, 0, 0, .54);
+$md-dol-hint: rgba(0, 0, 0, .38);
+$md-dol-divider: rgba(0, 0, 0, .12);
+
+// Light text on dark backgrounds
+$md-lod-primary: $white;
+$md-lod-secondary: rgba(255, 255, 255, .70);
+$md-lod-hint: rgba(255, 255, 255, .50);
+$md-lod-divider: rgba(255, 255, 255, .12);
+
+// Icon Opacity
+@mixin md-icon($state) {
+    opacity: $state;
+}
+
+// Dark icon / light background
+$md-di-active: .54;
+$md-di-inactive: .38;
+
+// Light icon / dark background
+$md-li-active: 1;
+$md-li-inactive: .50;

@@ -1,0 +1,24 @@
+.button {
+    font-family: jSans-light, sans-serif;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: inline-block;
+    // Lineheight, height, padding, all to offset the empty space beneath the font
+    // This is specific to the jSans-light font being used here
+    line-height: 2.4rem;
+    height: 3rem;
+    padding: .5rem 4rem;
+    font-size: 2rem;
+    border-radius: 2rem;
+    color: $md-lod-primary;
+    background-color: $button;
+    transition: color 250ms ease;
+
+    &:hover {
+        color: $md-lod-primary;
+    }
+
+    &:visited {
+        color: $md-lod-primary;
+    }
+}

@@ -2,11 +2,530 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title>Brandi and Jason Wedding</title>
-        <link rel="stylesheet" href="style.css">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title></title>
+        <!-- <link rel="stylesheet" href="/resources/styles/vendor.min.css"> -->
+        <link rel="stylesheet" href="/resources/styles/main.css">
+        <link rel="stylesheet" href="css-loader.css">
+        <link rel="stylesheet" href="iziModal.min.css">
+        <link rel="canonical" href="http://brandiandjason.com/">
+        <script type="text/javascript" src="/resources/scripts/vendor.min.js"></script>
+        <script type="text/javascript" src="iziModal.min.js"></script>
+        <script type="text/javascript" src="/resources/scripts/bundle.js"></script>
+        <style>
+    @font-face {
+        font-family: 'jSans-light';
+        src: url('fonts/JosefinSans-Light.ttf') format('truetype');
+        font-weight: 300;
+        font-style: normal;
+    }
+
+    @font-face {
+        font-family: 'jSans-regular';
+        src: url('fonts/JosefinSans-Regular.ttf') format('truetype');
+        font-weight: 400;
+        font-style: normal;
+    }
+</style>
+
+<script>
+    (function() {
+
+        // Optimization for Repeat Views
+        if( sessionStorage.foutFontsLoaded ) {
+            document.documentElement.className += " fonts-loaded";
+            return;
+        }
+
+        (function(){function m(a,b){document.addEventListener?a.addEventListener("scroll",b,!1):a.attachEvent("scroll",b)}function n(a){document.body?a():document.addEventListener?document.addEventListener("DOMContentLoaded",function c(){document.removeEventListener("DOMContentLoaded",c);a()}):document.attachEvent("onreadystatechange",function l(){if("interactive"==document.readyState||"complete"==document.readyState)document.detachEvent("onreadystatechange",l),a()})};function t(a){this.a=document.createElement("div");this.a.setAttribute("aria-hidden","true");this.a.appendChild(document.createTextNode(a));this.b=document.createElement("span");this.c=document.createElement("span");this.h=document.createElement("span");this.f=document.createElement("span");this.g=-1;this.b.style.cssText="max-width:none;display:inline-block;position:absolute;height:100%;width:100%;overflow:scroll;font-size:16px;";this.c.style.cssText="max-width:none;display:inline-block;position:absolute;height:100%;width:100%;overflow:scroll;font-size:16px;";
+        this.f.style.cssText="max-width:none;display:inline-block;position:absolute;height:100%;width:100%;overflow:scroll;font-size:16px;";this.h.style.cssText="display:inline-block;width:200%;height:200%;font-size:16px;max-width:none;";this.b.appendChild(this.h);this.c.appendChild(this.f);this.a.appendChild(this.b);this.a.appendChild(this.c)}
+        function x(a,b){a.a.style.cssText="max-width:none;min-width:20px;min-height:20px;display:inline-block;overflow:hidden;position:absolute;width:auto;margin:0;padding:0;top:-999px;left:-999px;white-space:nowrap;font:"+b+";"}function y(a){var b=a.a.offsetWidth,c=b+100;a.f.style.width=c+"px";a.c.scrollLeft=c;a.b.scrollLeft=a.b.scrollWidth+100;return a.g!==b?(a.g=b,!0):!1}function z(a,b){function c(){var a=l;y(a)&&a.a.parentNode&&b(a.g)}var l=a;m(a.b,c);m(a.c,c);y(a)};function A(a,b){var c=b||{};this.family=a;this.style=c.style||"normal";this.weight=c.weight||"normal";this.stretch=c.stretch||"normal"}var B=null,C=null,E=null,F=null;function I(){if(null===E){var a=document.createElement("div");try{a.style.font="condensed 100px sans-serif"}catch(b){}E=""!==a.style.font}return E}function J(a,b){return[a.style,a.weight,I()?a.stretch:"","100px",b].join(" ")}
+        A.prototype.load=function(a,b){var c=this,l=a||"BESbswy",r=0,D=b||3E3,G=(new Date).getTime();return new Promise(function(a,b){var e;null===F&&(F=!!document.fonts);if(e=F)null===C&&(C=/OS X.*Version\/10\..*Safari/.test(navigator.userAgent)&&/Apple/.test(navigator.vendor)),e=!C;if(e){e=new Promise(function(a,b){function f(){(new Date).getTime()-G>=D?b():document.fonts.load(J(c,'"'+c.family+'"'),l).then(function(c){1<=c.length?a():setTimeout(f,25)},function(){b()})}f()});var K=new Promise(function(a,
+        c){r=setTimeout(c,D)});Promise.race([K,e]).then(function(){clearTimeout(r);a(c)},function(){b(c)})}else n(function(){function e(){var b;if(b=-1!=g&&-1!=h||-1!=g&&-1!=k||-1!=h&&-1!=k)(b=g!=h&&g!=k&&h!=k)||(null===B&&(b=/AppleWebKit\/([0-9]+)(?:\.([0-9]+))/.exec(window.navigator.userAgent),B=!!b&&(536>parseInt(b[1],10)||536===parseInt(b[1],10)&&11>=parseInt(b[2],10))),b=B&&(g==u&&h==u&&k==u||g==v&&h==v&&k==v||g==w&&h==w&&k==w)),b=!b;b&&(d.parentNode&&d.parentNode.removeChild(d),clearTimeout(r),a(c))}
+        function H(){if((new Date).getTime()-G>=D)d.parentNode&&d.parentNode.removeChild(d),b(c);else{var a=document.hidden;if(!0===a||void 0===a)g=f.a.offsetWidth,h=p.a.offsetWidth,k=q.a.offsetWidth,e();r=setTimeout(H,50)}}var f=new t(l),p=new t(l),q=new t(l),g=-1,h=-1,k=-1,u=-1,v=-1,w=-1,d=document.createElement("div");d.dir="ltr";x(f,J(c,"sans-serif"));x(p,J(c,"serif"));x(q,J(c,"monospace"));d.appendChild(f.a);d.appendChild(p.a);d.appendChild(q.a);document.body.appendChild(d);u=f.a.offsetWidth;v=p.a.offsetWidth;
+        w=q.a.offsetWidth;H();z(f,function(a){g=a;e()});x(f,J(c,'"'+c.family+'",sans-serif'));z(p,function(a){h=a;e()});x(p,J(c,'"'+c.family+'",serif'));z(q,function(a){k=a;e()});x(q,J(c,'"'+c.family+'",monospace'))})})};"undefined"!==typeof module?module.exports=A:(window.FontFaceObserver=A,window.FontFaceObserver.prototype.load=A.prototype.load);}());
+
+        var light = new FontFaceObserver('jSans-light', {
+                weight: 300,
+                style: 'normal'
+            });
+
+        var regular = new FontFaceObserver('jSans-regular', {
+                weight: 400,
+                style: 'normal'
+            });
+
+        Promise.all([light.load(), regular.load()]).then(function () {
+            document.documentElement.className += "fonts-loaded";
+
+            // Optimization for Repeat Views
+            sessionStorage.foutFontsLoaded = true;
+        });
+    })();
+</script>
+
     </head>
     <body>
-        <h1>shit just got real</h1>
-        <p>details coming shortly</p>
+        <div class="icon hamburger nav-mobile-toggle">
+    <svg width="24" height="24" id="hamburger" viewBox="0 0 24 16">
+        <line class="a" fill="none" stroke-width="2" x1="0" y1="1" x2="24" y2="1" />
+        <line class="b" fill="none" stroke-width="2" x1="0" y1="8" x2="24" y2="8" />
+        <line class="c" fill="none" stroke-width="2" x1="0" y1="15" x2="24" y2="15" />
+    </svg>
+</div>
+
+        <div class="loader"></div>
+
+        <nav class="nav-mobile">
+    <div class="link-container">
+        <a href="#home" class="nav__item nav__item--siteId">
+            home
+        </a>
+        <a href="#journey" class="nav__item">
+            the journey
+        </a>
+        <a href="#location" class="nav__item">
+            when + where
+        </a>
+        <a href="#portland" class="nav__item">
+            pdx guide
+        </a>
+        <a href="#registry" class="nav__item">
+            registry
+        </a>
+        <a href="#rsvp" class="nav__item">
+            rsvp
+        </a>
+    </div>
+</nav>
+
+        <nav class="nav">
+    <div class="nav__section nav-link">
+        <a href="#home" class="nav__item nav__item--siteId">
+            b&amp;j
+        </a>
+    </div>
+    <div class="nav__section nav-link">
+        <a href="#journey" class="nav__item">
+            the journey
+        </a>
+        <a href="#location" class="nav__item">
+            when + where
+        </a>
+        <a href="#portland" class="nav__item">
+            pdx guide
+        </a>
+        <a href="#registry" class="nav__item">
+            registry
+        </a>
+        <a href="#rsvp" class="nav__item">
+            rsvp
+        </a>
+    </div>
+</nav>
+
+            <main class="main " aria-label="Content">
+
+    
+
+<section
+    class="section landing"
+    style="background-image: linear-gradient(to top, rgba(0,0,0,.54), rgba(0,0,0,.54)), url('../../assets/images/coffee.jpg');"
+    id="home">
+    <div>
+        <h2 class="heading">
+            brandi & jason <br /> are getting married
+        </h2>
+        <p class="subheading">
+            07.15.17 | 11 am | Noble Rot Restaurant, Portland, OR
+        </p>
+        <a href="#rsvp" class="button">
+            rsvp
+        </a>
+    </div>
+</section>
+
+
+<section class="section landing-info">
+    <div class="content">
+        <p class="copy">
+            Already RSVP'd?
+        </p>
+        <p class="copy">
+            Get to know the couple.
+        </p>
+        <a href="#journey">
+            <svg class="icon arrow" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="60px" height="80px" viewBox="0 0 60 80" xml:space="preserve">
+                <polyline fill="none" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" points="
+                0.375,0.375 45.63,38.087 0.375,75.8 "/>
+            </svg>
+        </a>
+    </div>
+</section>
+
+
+<section
+    class="section divider "
+    style="background-image: linear-gradient(to top, rgba(0,0,0,.38), rgba(0,0,0,.38)), url('../../assets/images/road.jpg');"
+    id="journey">
+    <div>
+        <h2 class="heading">
+            the journey
+        </h2>
+    </div>
+</section>
+
+
+
+
+<section class="section journey">
+    <div class="content">
+        <div class="brandi">
+            <div class="avatar-container mobile">
+                <img class="avatar mobile" src="/assets/images/brandi.svg" alt="">
+            </div>
+            <div class="flex-container">
+                <div>
+                    <h3 class="subheading">Brandi</h3>
+                    <p class="copy">Brandi is a California native who thoroughly enjoys reading, binge watching shows for the umpteenth time on Netflix and most types of physical activity. She spends her days as an Email Production Manager and her nights dreaming of running away to join the circus full time so she can get paid to wear brightly colored bodysuits while doing handstands on top of other humans.</p>
+                </div>
+                <img class="avatar desktop" src="/assets/images/brandi.svg" alt="">
+            </div>
+        </div>
+        <div class="jason">
+            <div class="avatar-container mobile">
+                <img class="avatar mobile" src="/assets/images/jason.svg" alt="">
+            </div>
+            <div class="flex-container">
+                <img class="avatar desktop" src="/assets/images/jason.svg" alt="">
+                <div>
+                    <h3 class="subheading">Jason</h3>
+                    <p class="copy">Jason was born in Colorado but grew up in a suburb of Portland, OR. Growing up, he kept busy with video games, playing guitar, and entertaining a proclivity for computers. His earlier hobbies  later translated into an intense passion for coffee, a serious rock climbing hobby and a career in web development. This kick ass site you&CloseCurlyQuote;re perusing on your way to RSVP is a product of his.</p>
+                </div>
+            </div>
+        </div>
+        <div class="bandj">
+            <h3 class="subheading">Brandi + Jason</h3>
+            <p class="copy">Jason and Brandi met NYE 2014. They started climbing together with friends at a bouldering gym. Bouldering sessions with groups turned into bouldering sessions with only each other, which led to post-climb burgers. Burgers turned into late night coffee and talking about books, which led to inappropriate jokes and a penchant for getting pizza at 2am so they could sustain themselves while binge watching the Walking Dead. Now, they want to watch the Walking Dead and drink coffe for the rest of their lives together. Marriage is the obvious next step.</p>
+        </div>
+    </div>
+</section>
+
+
+<section
+    class="section divider "
+    style="background-image: linear-gradient(to top, rgba(0,0,0,.38), rgba(0,0,0,.38)), url('../../assets/images/noble_rot.jpg');"
+    id="location">
+    <div>
+        <h2 class="heading">
+            when + where
+        </h2>
+    </div>
+</section>
+
+
+
+
+<section class="section location">
+    <div class="content">
+        <h3 class="subheading date">
+            Saturday, July 15th, 2017 @ 11 am
+        </h3>
+        <div class="address-container">
+            <div class="info">
+                <h3 class="subheading">
+                    Noble Rot
+                </h3>
+                <a href="https://goo.gl/maps/MUWKqz8u6UU2" class="link">
+                    <address class="link">
+                        1111 East Burnside<br />
+                        Fourth Floor<br />
+                        Portland, OR 97201
+                    </address>
+                </a>
+            </div>
+            <div class="map-container">
+                <div class="overlay" onClick="style.pointerEvents='none'"></div>
+                <iframe
+                    class="google-map"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2795.3548563042264!2d-122.65648878442006!3d45.52306417910169!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5495a0a56d14615f%3A0xd793fc6ab312b3b7!2sNoble+Rot!5e0!3m2!1sen!2sus!4v1486228329399"
+                    frameborder="0"
+                    scrollwheel="false"
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </div>
+        <p class="copy center">
+            We’ll feed you an awesome brunch and drinks right after the ceremony. But don’t come hangry!
+        </p>
+        <div class="expect block">
+            <div class="block-heading-container">
+                <h3 class="subheading">
+                    Venue
+                </h3>
+                <svg class="icon arrow" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="60px" height="80px" viewBox="0 0 60 80" xml:space="preserve">
+                    <polyline fill="none" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" points="
+                    0.375,0.375 45.63,38.087 0.375,75.8 "/>
+                </svg>
+            </div>
+            <div class="block-info-container">
+                <p class="copy">
+                    The venue is located on the 4th floor of the building. It is handicapped accessible and there is an elevator. Weather in the month of July in Oregon typically has the least rain, with temperatures often reaching mid-80s. The ceremony will take place on an uncovered patio. There will be seating on the patio and a covered portion of the adjoining atrium. This area will not have air conditioning. The reception will be held directly afterward and will take place mostly inside the restaurant, which does have air conditioning.
+                </p>
+            </div>
+        </div>
+        <div class="unplugged block">
+            <div class="block-heading-container">
+                <h3 class="subheading block-subheading">
+                    Unplugged ceremony
+                </h3>
+                <svg class="icon arrow" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="60px" height="80px" viewBox="0 0 60 80" xml:space="preserve">
+                    <polyline fill="none" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" points="
+                    0.375,0.375 45.63,38.087 0.375,75.8 "/>
+                </svg>
+            </div>
+            <div class="block-info-container">
+                <p class="copy">
+                    We&CloseCurlyQuote;re requesting that our very short and sweet wedding ceremony be completely unplugged and cellphone/camera-free. We&CloseCurlyQuote;ll have a fantastic photographer named Alex who will be documenting it to ensure that guests can enjoy the moment.<br /><br />
+                    As soon as the ceremony is over, feel free to pull out your camera for the reception and go crazy - take as many pictures as your heart desires! We only ask that you not share any pictures of the newlyweds on social media. Most of you already know how Brandi feels about people bein&CloseCurlyQuote; in her business.
+                </p>
+            </div>
+        </div>
+        <div class="parking block">
+            <div class="block-heading-container">
+                <h3 class="subheading block-subheading">
+                    Parking
+                </h3>
+                <svg class="icon arrow" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="60px" height="80px" viewBox="0 0 60 80" xml:space="preserve">
+                    <polyline fill="none" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" points="
+                    0.375,0.375 45.63,38.087 0.375,75.8 "/>
+                </svg>
+            </div>
+            <div class="block-info-container">
+                <p class="copy">
+                    There is Pay-to-Park street parking along East Burnside for several blocks. There is also free street parking in the residential area nearby.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section
+    class="section divider "
+    style="background-image: linear-gradient(to top, rgba(0,0,0,.38), rgba(0,0,0,.38)), url('../../assets/images/portland.jpg');"
+    id="portland">
+    <div>
+        <h2 class="heading">
+            pdx guide
+        </h2>
+    </div>
+</section>
+
+
+
+
+<section class="section portland">
+    <div class="content">
+        <div class="accommodations block">
+            <div class="block-heading-container">
+                <h3 class="subheading">
+                    Accommodations
+                </h3>
+                <svg class="icon arrow" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="60px" height="80px" viewBox="0 0 60 80" xml:space="preserve">
+                    <polyline fill="none" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" points="
+                    0.375,0.375 45.63,38.087 0.375,75.8 "/>
+                </svg>
+            </div>
+            <div class="block-info-container">
+                <p class="copy">
+                    There are many hotels to choose from for the weekend but the two below will put you in the middle of the hustle and bustle in downtown and are a short drive away from the venue.
+                </p>
+                <div class="entry">
+                    <a href="http://hotellucia.com/" class="link">
+                        Hotel Lucia
+                    </a>
+                    <address class="copy">
+                        400 SW Broadway<br />
+                        Portland, OR 97205
+                    </address>
+                </div>
+                <div class="entry">
+                    <a href="http://www.monaco-portland.com/hotels-in-portland-oregon/" class="link">
+                        Kimpton Hotel Monaco Portland
+                    </a>
+                    <address class="copy">
+                        506 SW Washington Street<br />
+                        Portland, OR 97204
+                    </address>
+                </div>
+            </div>
+        </div>
+        <div class="food-and-drink block">
+            <div class="block-heading-container">
+                <h3 class="subheading">
+                    Food &amp; Drink
+                </h3>
+                <svg class="icon arrow" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="60px" height="80px" viewBox="0 0 60 80" xml:space="preserve">
+                    <polyline fill="none" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" points="
+                    0.375,0.375 45.63,38.087 0.375,75.8 "/>
+                </svg>
+            </div>
+            <div class="block-info-container">
+                <p class="copy">
+                    There are some delicious places to eat and drink in this town. Check out some of our faves:
+                </p>
+                
+                    <div class="rest-container">
+                        <a href="https://www.yelp.com/biz/swift-lounge-portland-2" class="link">SWIFT</a> <span class="copy">(For Brunch - $)</span>
+                    </div>
+                
+                    <div class="rest-container">
+                        <a href="https://www.yelp.com/biz/zells-cafe-portland" class="link">Zell&CloseCurlyQuote;s Cafe</a> <span class="copy">(Breakfast/Brunch - $$)</span>
+                    </div>
+                
+                    <div class="rest-container">
+                        <a href="https://www.yelp.com/biz/nongs-khao-man-gai-portland-2" class="link">Nong&CloseCurlyQuote;s Khao Man Ghai</a> <span class="copy">(Thai, Best Chicken and Rice ever - $)</span>
+                    </div>
+                
+                    <div class="rest-container">
+                        <a href="https://www.yelp.com/biz/por-que-no-taqueria-portland-2" class="link">Por Que No</a> <span class="copy">(Tacos! - $)</span>
+                    </div>
+                
+                    <div class="rest-container">
+                        <a href="http://www.foodcartsportland.com/maps/" class="link">SW Food Carts</a> <span class="copy">(For anything and everything - $)</span>
+                    </div>
+                
+                    <div class="rest-container">
+                        <a href="https://www.yelp.com/biz/toro-bravo-portland" class="link">Toro Bravo</a> <span class="copy">(Tapas, Spanish - $$/$$$)</span>
+                    </div>
+                
+                    <div class="rest-container">
+                        <a href="https://www.yelp.com/biz/andina-portland" class="link">Andina</a> <span class="copy">(Tapas, Peruvian - $$$)</span>
+                    </div>
+                
+                    <div class="rest-container">
+                        <a href="https://www.yelp.com/biz/papa-haydn-portland" class="link">Papa Haydn</a> <span class="copy">(For Dessert - $/$$)</span>
+                    </div>
+                
+                    <div class="rest-container">
+                        <a href="https://www.yelp.com/biz/salt-and-straw-portland" class="link">Salt and Straw</a> <span class="copy">(Ice Cream - $)</span>
+                    </div>
+                
+                    <div class="rest-container">
+                        <a href="https://www.yelp.com/biz/water-avenue-coffee-portland" class="link">Water Avenue Coffee</a> <span class="copy">(Coffee - $)</span>
+                    </div>
+                
+            </div>
+        </div>
+        <div class="activities block">
+            <div class="block-heading-container">
+                <h3 class="subheading">
+                    Activities
+                </h3>
+                <svg class="icon arrow" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="60px" height="80px" viewBox="0 0 60 80" xml:space="preserve">
+                    <polyline fill="none" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" points="
+                    0.375,0.375 45.63,38.087 0.375,75.8 "/>
+                </svg>
+            </div>
+            <div class="block-info-container">
+                <p class="copy">
+                    Shop at <a href="http://www.portlandsaturdaymarket.com/visit-the-market/hours-directions/" class="link">Portland Saturday Market</a> and walk down row upon row of unique, handcrafted items, choose from a plethora of exotic foods to eat while listening to live music.
+                </p>
+                <p class="copy">
+                    Visit <a href="http://www.powells.com/locations/powells-city-of-books" class="link">Powell’s City of Books</a> to explore the largest used and new bookstore in the world. It takes up an entire city block and holds approximately one million books spread through 9 color-coded rooms and over 3,500 different sections including out-of-print and hard-to-find titles.
+                </p>
+                <p class="copy">
+                    Want to kick it in the outdoors? Visit the <a href="https://www.portlandoregon.gov/parks/finder/index.cfm?action=viewpark&propertyid=1113" class="link">International Rose Test Garden</a> or take a hike in <a href="http://www.forestparkconservancy.org/forest-park/" class="link">Forest Park</a>, Portland’s 5,200 acre urban forest. If you’d like more hiking options, hop in the car and head 35 minutes east and check out one of the many hikes in the <a href="https://www.fs.usda.gov/crgnsa" class="link">Columbia River Gorge</a>.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section
+    class="section divider "
+    style="background-image: linear-gradient(to top, rgba(0,0,0,.38), rgba(0,0,0,.38)), url('../../assets/images/registry.png');"
+    id="registry">
+    <div>
+        <h2 class="heading">
+            registry
+        </h2>
+    </div>
+</section>
+
+
+<section class="section registry">
+    <div class="content">
+        <h2 class="subheading">
+            Here&CloseCurlyQuote;s the deal
+        </h2>
+        <p class="copy">
+            All we want on this day is to get married with you all there to heckle us and celebrate with breakfast food, coffee and bubbly. That said, we&CloseCurlyQuote;ve decided not to register for gifts.
+        </p>
+        <br />
+        <p class="copy">
+            If you&CloseCurlyQuote;d like to give beyond what you&apos;ve already given us (plane tickets, hotel stays, your time, and more), feel free to sneak some cash into the reception which we will use on our next adventure: Puerto Vallarta.
+        </p>
+    </div>
+</section>
+
+
+<section class="section rsvp" id="rsvp">
+    <div class="content">
+        <div class="title">
+            <img class="image" src="../../assets/images/rsvp.jpg" alt="">
+        </div>
+        <form action="" method="post" target="no-target" id="rsvp-form">
+            <h2 class="excerpt copy">We&CloseCurlyQuote;re excited to celebrate with you! Kindly respond by March 31, 2017.</h2>
+            <div class="form-group">
+                <label class="label copy" for="rsvp-name">Full Name</label>
+                <input class="input copy" type="name" name="rsvp-name" id="rsvp-name" value="">
+            </div>
+             <div class="form-group">
+                <label class="label copy" for="rsvp-email">Email Address</label>
+                <input class="input copy" type="email" name="rsvp-email" id="rsvp-email" value="">
+            </div>
+            <div class="form-group">
+                <label class="label copy" for="rsvp-attending">Will you be attending?</label>
+                <div class="input copy input--no-border input-container">
+                    <div class="attending">
+                        <span class="font-light">YES</span>
+                        <input type="radio" name="rsvp-attending" value="Yes">
+                    </div>
+                    <div class="attending">
+                        <span class="font-light">NO</span>
+                        <input type="radio" name="rsvp-attending" value="No">
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="label copy" for="rsvp-guest">Who is coming with you?</label>
+                <input class="input copy" type="text" name="rsvp-guest" id="rsvp-guest" value="">
+            </div>
+            <div class="form-group textarea">
+                <label class="label copy" for="rsvp-notes">Anything you want us to know?</label>
+                <textarea
+                    class="input copy textarea"
+                    name="notes"
+                    id="rsvp-notes"
+                    rows="8"
+                    cols="80">
+                </textarea>
+            </div>
+            <div class="form-group submit-button">
+                <button type="submit" class="button">Submit</button>
+            </div>
+        </form>
+        <iframe src="#" id="no-target" name="no-target" style="visibility:hidden"></iframe>
+    </div>
+</section>
+
+
+            <div id="modal"></div>
+        </main>
     </body>
 </html>
+
