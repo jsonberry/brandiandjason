@@ -1,6 +1,6 @@
 .sass-cache
 .jekyll-metadata
 .env
-.dist
+dist
 node_modules
 bower_components

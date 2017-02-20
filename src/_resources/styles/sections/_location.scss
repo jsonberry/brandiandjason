@@ -29,13 +29,15 @@
             @include when-wider-than(small_desktop) {
                 flex-direction: row;
             }
+
+            .info {
+                display: flex;
+                flex-direction: column;
+                text-transform: none;
+            }
         }
     }
 
-    .info {
-        display: flex;
-        flex-direction: column;
-    }
 
     .time {
         @include subheading;

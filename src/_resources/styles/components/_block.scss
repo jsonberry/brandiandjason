@@ -1,7 +1,10 @@
 .block {
-    margin-bottom: 3rem;
-    padding-bottom: 1rem;
     border-bottom: 1px solid $md-dol-divider;
+    padding-bottom: 1rem;
+
+    &:not(:last-child) {
+        margin-bottom: 3rem;
+    }
 
     .subheading {
         display: inline;
@@ -11,10 +14,15 @@
         display: none;
     }
 
+    .entry {
+        margin-bottom: 1rem;
+    }
+
     &-heading-container {
         &:hover,
         &:focus {
             cursor: pointer;
         }
+        margin-bottom: 1rem;
     }
 }

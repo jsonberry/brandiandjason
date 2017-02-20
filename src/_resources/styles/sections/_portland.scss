@@ -1,5 +1,15 @@
 .section.portland {
-    .rest-container {
-        display: block;
+    .activities {
+        .copy {
+            margin-bottom: 1rem;
+        }
+    }
+
+    .food-and-drink {
+        .block-info-container {
+            .copy:first-child {
+                margin-bottom: 1rem;
+            }
+        }
     }
 }
