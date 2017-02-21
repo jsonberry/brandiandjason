@@ -42,15 +42,13 @@ $(function() {
     });
 
     $('#rsvp-form').one('submit', function(e) {
+        e.preventDefault();
         $('.loader').addClass('loader-default is-active');
         $('.loader').attr({
             'data-half': '',
             'data-text': 'Submitting your RSVP'
         });
 
-        let baseURL = 'https://docs.google.com/forms/d/e/';
-        let formId = '1FAIpQLSdGUf3zSOVNZJ0zPsayqP4U1VuGvrhFUQh09Z0oP905JU-yXg/';
-        let submitRef = 'submit=8869835504486836160';
 
         let gInputIds = [
             '216944502',
@@ -60,12 +58,19 @@ $(function() {
             '1223284537'
         ];
 
+        let submitRef = 'submit=8869835504486836160';
         let formData = $(this).serializeArray();
         let responseData = formData.reduce((a, v, i) => a + `entry.${gInputIds[i]}=${encodeURIComponent(v.value)}&`, new String);
         let data = `${responseData}${submitRef}`;
-        let submitURL = `${baseURL}${formId}formResponse?${responseData}${submitRef}`;
-        $(this)[0].action = submitURL;
-        setTimeout(onSuccess, 2000);
+
+        $.ajax({
+            url: 'https://docs.google.com/forms/d/e/1FAIpQLSdGUf3zSOVNZJ0zPsayqP4U1VuGvrhFUQh09Z0oP905JU-yXg/formResponse?',
+            method: 'POST',
+            data: data
+        })
+        .always(function(e) {
+            setTimeout(onSuccess, 2000);
+        });
 
         function onSuccess() {
             $('.loader').removeClass('loader-default is-active');
