@@ -16,7 +16,12 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        padding: 0 3.5rem;;
+        padding: {
+            top: 0;
+            left: 3.5rem;
+            right: 3.5rem;
+            bottom: 1rem;
+        }
         border: 1px solid $md-dol-divider;
     }
 
@@ -40,12 +45,13 @@
 
         &.submit-button {
             justify-content: flex-end;
-            margin: 0;
+            margin-top: 5rem;
         }
 
         &.textarea {
             margin-bottom: 2rem;
         }
+
     }
 
     .label {
@@ -65,19 +71,13 @@
         flex-basis: 50%;
         width: 100%;
 
+        &.no-border {
+            border: 0;
+        }
+
         &:focus {
             outline: none;
             border-bottom: 1px solid $orange;
-        }
-
-        &.textarea {
-            resize: none;
-            border: 1px solid $md-dol-hint;
-
-            &:focus {
-                outline: none;
-                border: 1px solid $orange;
-            }
         }
     }
 
