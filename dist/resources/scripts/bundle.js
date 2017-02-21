@@ -97,19 +97,14 @@
 	            'data-text': 'Submitting your RSVP'
 	        });
 	
-	        var baseURL = 'https://docs.google.com/forms/d/e/';
-	        var formId = '1FAIpQLSdGUf3zSOVNZJ0zPsayqP4U1VuGvrhFUQh09Z0oP905JU-yXg/';
-	        var submitRef = 'submit=8869835504486836160';
-	
 	        var gInputIds = ['216944502', '2016456273', '971476322', '597427551', '1223284537'];
 	
+	        var submitRef = 'submit=8869835504486836160';
 	        var formData = $(this).serializeArray();
 	        var responseData = formData.reduce(function (a, v, i) {
 	            return a + ('entry.' + gInputIds[i] + '=' + encodeURIComponent(v.value) + '&');
 	        }, new String());
 	        var data = '' + responseData + submitRef;
-	        var submitURL = '' + baseURL + formId + 'formResponse?' + responseData + submitRef;
-	        // $(this)[0].action = submitURL;
 	
 	        $.ajax({
 	            url: 'https://docs.google.com/forms/d/e/1FAIpQLSdGUf3zSOVNZJ0zPsayqP4U1VuGvrhFUQh09Z0oP905JU-yXg/formResponse?',
