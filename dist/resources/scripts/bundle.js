@@ -90,6 +90,7 @@
 	    });
 	
 	    $('#rsvp-form').one('submit', function (e) {
+	        e.preventDefault();
 	        $('.loader').addClass('loader-default is-active');
 	        $('.loader').attr({
 	            'data-half': '',
@@ -108,8 +109,15 @@
 	        }, new String());
 	        var data = '' + responseData + submitRef;
 	        var submitURL = '' + baseURL + formId + 'formResponse?' + responseData + submitRef;
-	        $(this)[0].action = submitURL;
-	        setTimeout(onSuccess, 2000);
+	        // $(this)[0].action = submitURL;
+	
+	        $.ajax({
+	            url: 'https://docs.google.com/forms/d/e/1FAIpQLSdGUf3zSOVNZJ0zPsayqP4U1VuGvrhFUQh09Z0oP905JU-yXg/formResponse?',
+	            method: 'POST',
+	            data: data
+	        }).always(function (e) {
+	            setTimeout(onSuccess, 2000);
+	        });
 	
 	        function onSuccess() {
 	            $('.loader').removeClass('loader-default is-active');
