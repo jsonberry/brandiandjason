@@ -1,6 +1,6 @@
 const config = require('./config');
 
-config.client.getEntry(config.args.location)
+config.client.getEntry(config.endpoints.location)
     .then(location =>
         config.fs.writeFile('src/_data/location.json', JSON.stringify(location.fields), err => {
         if (err) throw err;

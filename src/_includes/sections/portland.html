@@ -50,7 +50,7 @@
                 <p class="copy">
                     There are some delicious places to eat and drink in this town. Check out some of our faves:
                 </p>
-                {% for rest in content.foodAndDrink.restaurants %}
+                {% for rest in site.data.restaurants.entries %}
                     <div class="rest-container">
                         <a href="{{rest.href}}" class="link">{{rest.cta}}</a> <span class="copy">{{rest.copy}}</span>
                     </div>

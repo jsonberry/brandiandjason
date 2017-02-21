@@ -1,6 +1,6 @@
 const config = require('./config');
 
-config.client.getEntries(config.args.journey)
+config.client.getEntries(config.endpoints.journey)
     .then(journey => {
         let entries = journey.items.reduce((obj, v) => {
             let key = config.helpers.formatKey(v.fields.heading);

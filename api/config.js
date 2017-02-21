@@ -1,5 +1,5 @@
 const helpers = require('./helpers');
-const args = require('./contentfulArgs');
+const endpoints = require('./endpoints');
 const contentful = require('contentful');
 const fs = require('fs');
 const dotenv = require('dotenv');
@@ -13,7 +13,7 @@ const client = contentful.createClient({
 const config = {
     helpers: helpers,
     contentful: contentful,
-    args: args,
+    endpoints: endpoints,
     fs: fs,
     client: client
 }
