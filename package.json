@@ -10,7 +10,7 @@
     "location": "node api/location.js",
     "locationBlocks": "node api/locationBlocks.js",
     "restaurants": "node api/restaurants.js",
-    "content": "npm-run-all --parallel landing journey location locationBlocks restaurants"
+    "content": "npm run landing & npm run journey & npm run location & npm run locationBlocks & npm run restaurants"
   },
   "author": "Jason Awbrey",
   "license": "MIT",
@@ -36,7 +36,6 @@
     "gulp-uglify": "^2.0.0",
     "jquery": "^3.1.1",
     "main-bower-files": "^2.13.1",
-    "npm-run-all": "^4.0.1",
     "webpack-stream": "^3.2.0"
   },
   "dependencies": {
